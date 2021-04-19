@@ -1,0 +1,62 @@
+@media only screen and (min-width: 35em) {
+    /*Header Part*/
+    header {
+        text-align: center;
+}
+
+    .header-headings h1 {
+        font-size: 1.8em;
+ 
+    }
+    
+    .header-headings div {
+        font-size: 1.1em;
+    }
+
+    /*Nav Section*/
+    nav ul {
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: unset;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        border-bottom: none;
+    }
+
+    nav ul.hide {
+        display: none;
+    }
+
+    li.active a h2 {
+        color: black;
+    }
+    
+    nav div button {
+        display: none;
+    }
+    
+    nav ul.hide {
+        display: flex;
+    }
+
+    /*Body Part*/
+    main {
+        max-width: 600px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .main-content {
+        font-size: 0.95em;
+    }
+
+    /*Footer Part*/
+    footer {
+        max-width: 600px;
+        font-size: 1em;
+    }
+}

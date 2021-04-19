@@ -1,0 +1,136 @@
+@media only screen and (min-width: 35em) {
+    /*Header Part*/
+    header {
+        text-align: center;
+}
+
+    .message {
+    font-size: 1.4em;
+}
+
+    .header-headings h1 {
+        font-size: 1.8em;
+ 
+    }
+    
+    .header-headings div {
+        font-size: 1.1em;
+    }
+
+    /*Nav Section*/
+    nav ul {
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: unset;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        border-bottom: none;
+    }
+
+    nav ul.hide {
+        display: none;
+    }
+
+    li.active a h2 {
+        color: black;
+    }
+    
+    nav div button {
+        display: none;
+    }
+    
+    nav ul.hide {
+        display: flex;
+    }
+
+    /*Body Part*/
+    main {
+        max-width: 600px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+
+    /*Weather Summary and Pic*/
+    main h2 { 
+        font-size: 1.1em;
+    }
+
+    .weather-sum p {
+        font-size: 0.9em;
+        color: black;
+    }
+
+    .preston-pic {
+        position: relative;
+        z-index: 1;
+    }
+
+    .weather-sum {
+        position: absolute;
+        z-index: 5;
+        opacity: 0.75;
+        margin-top: 45px;
+        margin-left: 45px;
+    }
+
+    .umbrella-pic {
+        display: none;
+    }
+
+    /* 5 Day Forecast Section*/
+    .forecast-sec {
+        font-size: 1em;
+    }
+
+    .data {
+        font-size: 0.9rem;
+    }
+
+    /*Article Section*/
+    section h3.normal-h3 {
+        font-size: 1.1em;
+    }
+
+    .article-sec img {
+        width: 50%;
+        float: right;
+        padding: 1em;
+    }
+
+    .article-sec p {
+        font-size: 1em;
+    }
+
+        /*Contact Info Section*/
+    .contact-sec {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1em;
+        border: 1px solid  #3B403A;
+        margin: 20px auto;
+    }
+
+    .contact-sec img {
+        width: 80%;
+        grid-column: 1 / 2;
+    }
+
+    .contact-sec p {
+        grid-column: 2 / 3;
+        justify-self: center;
+        align-self: center;
+        font-size: 1em;
+    }
+
+
+    /*Footer Part*/
+    footer {
+        max-width: 600px;
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Page for Scoots">
+    <title>Scoots</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <picture class="site-logo">
+                <source media="(max-width: 50em)" srcset="images/scoots-small.jpg">
+                <source media="(max-width: 80em)" srcset="images/scoots-medium.jpg">
+                <img src="images/scoots-large.jpg" alt="scoots-logo">
+            </picture>
+        </a>
+        <div class="site-heading">
+            <h1>SCOOTS</h1>
+            <p>The ride you are looking for!</p>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <div class="button-sec">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+        </div>
+        <ul id="primaryNav" class="hide navigation">
+            <li><a href="index.html">
+                    Home
+                </a></li>
+            <li><a href="rentals.html">
+                    Rentals
+                </a></li>
+            <li><a href="reservation.html">
+                    Reservation
+                </a></li>
+            <li><a href="tours.html">
+                    Tours
+                </a></li>
+            <li class="active"><a href="#">
+                    Contact Us
+                </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="mainpage-size">
+            <section class="loc-con-section">
+                <div class="maps">
+                    <fieldset>
+                        <legend>Locations</legend>
+                        <p class="first">Playa del Carmen-Cozumel Ferry dock in el Centro de Cozumel<br><br>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.859077785354!2d-86.95296768503218!3d20.512002410593794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cf3a0ece15%3A0x9216e3c2b55e5526!2sPlaya%20del%20Carmen-Cozumel%20Ferry%20Dock!5e0!3m2!1sen!2sus!4v1607461841422!5m2!1sen!2sus"
+                                width="313" height="200" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </p>
+                        <p class="second">Terminal Puerta Maya<br><br>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.742668283969!2d-86.9772301850327!3d20.475759811801684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cd70625421%3A0xb1974a1818657af2!2sCozumel%20Cruise%20Terminal!5e0!3m2!1sen!2sus!4v1607462244626!5m2!1sen!2sus"
+                                width="313" height="200" frameborder="0" style="border:0;" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                        </p>
+                    </fieldset>
+                </div>
+                <form method="get" action="submit.html">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <label>Full Name<input type="text" name="fullName" class="textbox" required
+                                pattern="[a-zA-Z\p{L} \.\-]{5,}"></label>
+                        <label>Email<input type="email" name="email" class="textbox" required
+                                placeholder="example@gmail.com"></label>
+                        <label>Phone Number<input type="tel" class="textbox" name="phoneNumber" required
+                                pattern="^\d{3}.\d{3}.\d{4}" placeholder="123-123-1234"></label>
+                        <label for="addinfo">Message<br>
+                            <textarea id="comments" name="addinfo" rows="5" cols="30"
+                                placeholder="Any questions or concerns? Put it here."></textarea></label>
+                        <input type="submit" value="Send Message" class="submit-button">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+
+        <div class="contact-section">
+            <h3>Contact Us</h3>
+            <div class=contact-info>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-location-arrow"></i>1 Norte, Calle 14 Nte Esquina, Centro, 77710 Playa del
+                        Carmen, Mexico</li>
+                    <li><i class="fa-li fa fa-phone"></i>+52 984 873 4444</li>
+                    <li><i class="fa-li fa fa-envelope"></i>info@scoots.com</li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <a href="https://facebook.com/" target="_blank" rel="noopener"><i class="fa fa-facebook-square"
+                        aria-hidden="true"></i></a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa fa-twitter-square"
+                        aria-hidden="true"></i></a>
+                <a href="https://instagram.com/" target="_blank" rel="noopener"><i class="fa fa-skype"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &#169; 2020 Scoots - All Rights Reserved | <span id="dayUpdate"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/site.js"></script>
+</body>
+
+</html>

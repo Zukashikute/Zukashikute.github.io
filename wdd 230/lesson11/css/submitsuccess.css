@@ -1,0 +1,46 @@
+/*Body Part*/
+h3 {
+    color: #3B403A;
+    background: linear-gradient(90deg, #F7C678, #FD815E);
+    font: 1.4em Lemon;
+    text-align: center;
+    padding: 5px;
+    margin: 0px auto 15px;
+}
+
+/* Storm Center */
+main p{
+    font: 1.2em IBM Plex Serif;
+    background-color: #E9EDED;
+    padding: 2em;
+    margin: 0 auto 15px;
+}
+
+@media only screen and (min-width: 50em) {
+    /*Body Part*/
+    h3 {
+        font-size: 1.6em;
+        border-radius: 10px;
+        border: 1px solid #3B403A;
+    }
+
+    /* Storm Center */
+    main p {
+        font-size: 1.4em;
+        border-radius: 10px;
+        border: 1px solid #3B403A;
+    }
+}
+
+@media only screen and (min-width: 80em) {
+    /*Body Part*/
+    h3 {
+        font-size: 1.8em;
+    }
+
+    /* Storm Center */
+    main p {
+        font-size: 1.6em;
+
+    }
+}

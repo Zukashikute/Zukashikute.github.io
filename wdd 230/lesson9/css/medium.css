@@ -1,0 +1,226 @@
+@media only screen and (min-width: 35em) {
+
+    /*Header Part*/
+    header {
+        text-align: center;
+    }
+
+    .message {
+        font-size: 1.4em;
+    }
+
+    .header-headings h1 {
+        font-size: 1.8em;
+
+    }
+
+    .header-headings div {
+        font-size: 1.1em;
+    }
+
+    /*Nav Section*/
+    nav ul {
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: unset;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        border-bottom: none;
+    }
+
+    nav ul.hide {
+        display: none;
+    }
+
+    nav div button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    /*Body Part*/
+
+    h2.home-heading {
+        font-size: 1.2em;
+        width: 80%;
+        border-radius: 10px;
+        border: 1px solid #3B403A;
+    }
+
+    /* Home */
+    /*Hero Image*/
+    picture.heroImg img {
+        display: block;
+        margin: 0 auto;
+        width: auto;
+    }
+
+    /* Town Cards Section */
+    .town-cards section {
+        display: grid;
+        width: 65%;
+        padding: 0 0 1em;
+    }
+
+    .town-cards section h2 {
+        font-size: 1.4em;
+    }
+
+    .town-cards section div {
+        font-size: 1.1em;
+    }
+
+    .town-cards section p {
+        font-size: 1.1em;
+        margin: 10px auto 0;
+    }
+
+    .town-cards section:nth-child(1) {
+        grid-template-columns: 50% 25% 25%;
+        grid-template-areas:
+            "left right right"
+            "left right right"
+            "left right right"
+            "left right right";
+    }
+
+    .town-cards section:nth-child(2) {
+        grid-template-columns: 25% 25% 50%;
+        grid-template-areas:
+            "left left right"
+            "left left right"
+            "left left right"
+            "left left right";
+    }
+
+    .town-cards section:nth-child(3) {
+        grid-template-columns: 50% 25% 25%;
+        grid-template-areas:
+            "left right right"
+            "left right right"
+            "left right right"
+            "left right right";
+    }
+
+
+    div.town-cards section img {
+        width: 90%;
+        align-self: center;
+        padding: 1em;
+    }
+
+    /*Town Heading Element*/
+    .town-cards section:nth-child(even) h2 {
+        grid-column: right;
+        grid-row: 1 / 2;
+        align-self: end;
+    }
+
+    .town-cards section:nth-child(odd) h2 {
+        grid-column: left;
+        grid-row: 1 / 2;
+        align-self: end;
+    }
+
+    /*Town Div Element*/
+    .town-cards section:nth-child(even) div {
+        grid-column: right;
+        grid-row: 2 / 3;
+    }
+
+    .town-cards section:nth-child(odd) div {
+        grid-column: left;
+        grid-row: 2 / 3;
+    }
+
+    /*Town Paragraph Element*/
+    .town-cards section:nth-child(even) p {
+        grid-column: right;
+    }
+
+    .town-cards section:nth-child(odd) p {
+        grid-column: left;
+    }
+
+    /*Town Image Element*/
+    .town-cards section:nth-child(even) img {
+        grid-column: left;
+        grid-row: 1 / end;
+        justify-self: center;
+    }
+
+    .town-cards section:nth-child(odd) img {
+        grid-column: right;
+        grid-row: 1/ end;
+        justify-self: center;
+    }
+
+    /*Article Section*/
+    .article-sec {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .article-sec h2 {
+        font-size: 1.5em;
+        width: 78%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .article-sec h3 {
+        font-size: 1.4em;
+        border-radius: 10px;
+        border: 1px solid #3B403A;
+        width: 80%;
+    }
+
+    .article-sec h3.fishySec {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+
+    .article-sec ul li {
+        margin-left: 10%;
+    }
+
+
+
+    /*Contact Info Section*/
+    .contact-sec {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1em;
+        border: 1px solid #3B403A;
+        margin: 20px auto;
+        max-width: 600px;
+        border-radius: 10px;
+    }
+
+    .contact-sec img {
+        grid-column: 1 / 2;
+        width: auto;
+    }
+
+    .contact-sec p {
+        grid-column: 2 / 3;
+        justify-self: center;
+        align-self: center;
+        font-size: 1em;
+    }
+
+    /*Footer Part*/
+    .wf-link a {
+        font-size: 1.2em;
+    }
+
+    footer {
+        max-width: 600px;
+        font-size: 1em;
+        border-radius: 10px;
+    }
+}

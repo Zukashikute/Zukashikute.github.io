@@ -1,0 +1,110 @@
+/* Header Part*/
+h1 {
+    background: linear-gradient(180deg, #F7C678, #FD815E);
+    font: 1.8em Lemon;
+    color: #3B403A;
+    text-align: center;
+    width: 100%;
+    padding: 1.2em .5em;
+    margin: 0 auto;
+}
+
+/*Body Part*/
+main {
+    box-shadow: 0 0 20px #3B403A;
+    padding: .75em;
+    margin: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+
+section {
+    font-family: IBM Plex Serif;
+    border: 4px solid #3B403A;
+    margin: 5px;
+    padding: .4em 0em 1em;
+    font-size: 1em;
+    /*background: linear-gradient(35deg, #8fa9ff, #9bff8e);*/
+    background-color: rgb(255, 255, 161);
+}
+
+h2 {
+    margin-bottom: 2%;
+}
+
+p {
+    margin: 0px;
+}
+
+img {
+    width: 60%;
+    box-shadow: 1px 2px 10px #3B403A;
+    margin-top: 12px;
+}
+
+/* Footer Part*/
+footer {
+    background: linear-gradient(0deg, #F7C678, #FD815E);
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font: 1.1em IBM Plex Serif;
+    font-weight: bold;
+    padding: .5em 0em;
+}
+
+@media only screen and (min-width: 35em) {
+
+    /*Header Part*/
+    h1 {
+        font-size: 2em;
+    }
+
+    /*Body Part*/
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+
+    section {
+        font-size: 1.1em;
+    }
+
+    /* Footer Part*/
+    footer {
+        text-align: center;
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 65em) {
+    /*Header Part*/
+    h1 {
+        font-size: 2.2em;
+    }
+
+    /*Body Part*/
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+    }
+
+    section {
+        font-size: 1em;
+    }
+
+    /* Footer Part*/
+    footer {
+        text-align: center;
+        font-size: 1.25em;
+    }
+
+}

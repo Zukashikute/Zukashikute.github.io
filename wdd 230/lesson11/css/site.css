@@ -1,0 +1,239 @@
+/*Header Part*/
+header {
+    background: linear-gradient(180deg, #F7C678, #FD815E);
+    display: flex;
+    padding: 5px 2px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header picture {
+    display: flex;
+    justify-content: center;
+}
+
+picture.site-icon {
+    margin: 5px;
+}
+
+
+.message {
+    display: none;
+    padding-top: 0.8em;
+    background-color: #F7C678;
+    color: #3B403A;
+    font: 1.1em IBM Plex Serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header-headings {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-right: 14px;
+}
+
+.header-headings h1 {
+    font: 1.6em Lemon;
+    color: #3B403A;
+    margin-bottom: 0px;
+}
+
+.header-headings div {
+    font: 1em IBM Plex Serif;
+    font-weight: bold;
+}
+
+
+/*Button Section*/
+button {
+    background-color: #FC6136;
+    color: #3B403A;
+    font-size: 30px;
+    width: 100%;
+    border-color: #3B403A;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: none;
+    border-right: none;
+}
+
+div.button-sec {
+    display: flex;
+    justify-content: center;
+}
+
+/*Navigation Section*/
+nav ul.hide {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    background-color: #FC6136;
+    padding-left: 0;
+    font-weight: bold;
+}
+
+nav ul li {
+    list-style-type: none;
+    flex: 1 1 auto;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: IBM Plex Serif, serif;
+    color: #FECFC2;
+    display: block;
+}
+
+nav ul li a h2 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 12px;
+}
+
+nav ul li a h2:hover {
+    color: #3B403A;
+    background-color: #F7C678;
+
+}
+
+li.active a h2 {
+    color: black;
+    background-color: #FD815E;
+    font-family: IBM Plex Serif, serif;
+    font-weight: bold;
+}
+
+/*a:hover {
+    color: #F3E52B;
+}*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Footer Part*/
+.wf-link a {
+    font-size: 1em;
+    color: #FC6136;
+    text-decoration: none;
+    -webkit-text-stroke: 0.1px #3B403A;
+    margin-bottom: 0;
+    font-family: Lemon;
+}
+
+.wf-link a:hover {
+    color: rgb(255, 255, 161);
+}
+
+footer {
+    background: linear-gradient(0deg, #F7C678, #FD815E);
+    margin: auto;
+    text-align: center;
+    padding: 10px 5px;
+    font: 0.88em IBM Plex Serif;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 50em) {
+
+    /*Header Part*/
+    header {
+        text-align: center;
+    }
+
+    .message {
+        font-size: 1.4em;
+    }
+
+    .header-headings h1 {
+        font-size: 1.6em;
+
+    }
+
+    .header-headings div {
+        font-size: 1.2em;
+    }
+
+    /*Nav Section*/
+    nav ul {
+        flex-direction: unset;
+    }
+
+    nav ul li {
+        border-bottom: none;
+    }
+
+    nav ul li a h2 {
+        font-size: 1.4em;
+    }
+
+    nav ul.hide {
+        display: none;
+    }
+
+    nav div button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    /*Body Part*/
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /*Footer Part*/
+    footer {
+        width: 80%;
+        font-size: 1.2em;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}
+
+@media only screen and (min-width: 80em) {
+
+    /*Header Part*/
+    .message {
+        font-size: 1.8em;
+    }
+
+    .header-headings h1 {
+        font-size: 2.4em;
+    }
+
+    .header-headings div {
+        font-size: 1.4em;
+    }
+
+    /*Nav Section*/
+    nav ul li a h2 {
+        font-size: 1.8em;
+    }
+
+    /*Body Part*/
+    main {
+        width: 90%;
+    }
+
+    /*Footer Part*/
+    footer {
+        width: 90%;
+        font-size: 1.4em;
+    }
+}

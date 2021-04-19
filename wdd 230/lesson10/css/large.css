@@ -1,0 +1,72 @@
+@media only screen and (min-width: 50em) {
+    /*Header Part*/
+    .message {
+        font-size: 1.7em;
+    }
+
+    .header-headings h1 {
+        font-size: 2.2em;
+    }
+
+    .header-headings div {
+        font-size: 1.2em;
+    }
+
+    /*Nav Section*/
+    nav ul {
+        font-size: 1em;
+    }
+
+    /*Body Part*/
+    main {
+        width: 90%;
+    }
+
+    main section {
+        max-width: 900px;
+    }
+
+    h2.preston-heading   {
+        font-size: 1.4em;
+    }
+
+    /*Weather Summary and Pic*/
+    main h2 { 
+    font-size: 1.2em;
+    }
+
+    .weather-sum p {
+        font-size: 1em;
+    }
+    
+    .weather-sum {
+        margin-top: 45px;
+        margin-left: 45px;
+        padding: 1em;
+    }
+
+    /* 5 Day Forecast Section*/
+    .forecast-sec {
+    font-size: 1.2em;
+    }
+
+    /*Article Section*/
+    section h3.normal-h3 {
+        font-size: 1.2em;
+    }
+
+    .article-sec p {
+        font-size: 1.05em;
+    }
+
+        /*Contact Info Section*/
+    .contact-sec p {
+        font-size: 1em;
+    }
+
+    /*Footer Part*/
+    footer {
+        max-width: 900px;
+        font-size: 1.1em;
+    }
+}

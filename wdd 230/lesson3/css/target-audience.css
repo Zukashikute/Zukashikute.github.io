@@ -1,0 +1,241 @@
+/*Colors
+#F34213
+
+*/
+
+
+
+html {
+    font-size: 16px;
+}
+
+/* Header and navigation part */
+header {
+    text-align: center;
+    padding: 1em;
+    background: linear-gradient(0deg, #F7C678, #FD815E);
+}
+
+h1 {
+    text-align: center;
+    font: 1.6em Lemon;
+    color: #3B403A;
+    margin: 10px auto 0px;
+}
+
+/* Navigation menu settings */
+nav ul {
+    max-width: 400px;
+    margin: 20px auto 6px;
+    background-color: #FC6136;
+    border-radius: 20px;
+    padding: .4em;
+    display: flex;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: IBM Plex Serif;
+    color: #FECFC2;
+}
+
+a:hover {
+    color: #F8F08C;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+
+/*Body part */
+main {
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+section {
+    padding: 1.5em;
+    font-family: IBM Plex Serif;
+}
+
+h3 {
+    color: #FB410E;
+    font-family: Lemon;
+    font-size: 1.1em;
+}
+
+section p {
+    font-weight: bold;
+}
+
+section ul li {
+    font-weight: bold;
+}
+.body-head { 
+    text-align: center;
+    align-self: center;
+    border-radius: 10px;
+    padding: 0.2em;
+    max-width: 300px;
+    font: 1.3em  Lemon;
+    color: #3B403A;
+    background: radial-gradient( #F7C678, #FD815E);
+    border: 2px solid #3B403A;
+    font-weight: bold;
+}
+
+.persona1 {
+    background: linear-gradient(45deg, #F7C678, #FD815E);
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+    border-color: #3B403A;
+}
+
+.persona2 {
+    background: linear-gradient(45deg, #F7C678, #FD815E);
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+    border-color: #3B403A;
+}
+
+
+
+/* Footer part */
+
+footer {
+    text-align: center;
+    background: linear-gradient(0deg, #FD815E, #F7C678);
+    font: 0.8em IBM Plex Serif;
+    padding: 5px 2px;
+    font-weight: bold;
+}
+
+footer a {
+    color: black;
+}
+
+.credits {
+    margin: 5px auto;
+}
+
+.time-update {
+    margin-bottom: 5px;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*Medium Devices*/
+@media only screen and (min-width: 35em) {
+/* Header part */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    /*Navigation menu settings*/
+    nav ul {
+        max-width: 600px;
+        margin: 25px auto 8px;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+        list-style-type: none;
+
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    /* Body part */
+    main {
+        max-width: 500px;
+        margin: 18px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 1fr;
+    }
+
+    section {
+        padding: 1.25em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .body-head {
+        grid-area: 1 / 1 / 1 / end;
+        max-width: 500px;
+        font-size: 1.4em;
+        margin-top: 0;
+    }
+
+    .persona1 {
+        grid-area: 2 / 1 / 2 / 2;
+    }
+
+    .persona2 {
+        grid-area: 2 / 2 / 2 / 3;
+    }
+    /* Footer part */
+    footer {
+        font-size: 0.9em;
+    }
+}
+/*----------------------------------------------------------------------------------------------------*/
+/*Large Devices*/
+@media only screen and (min-width: 50em) {
+    /* Header part */
+    h1 {
+        font-size: 2em;
+    }
+
+    /*Navigation menu settings*/
+    nav ul {
+        max-width: 1000px;
+        margin: 30px auto 10px;
+    }
+
+    nav ul li {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    }
+
+    /* Body part */
+    main {
+        max-width: 900px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10% 1fr;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    .body-head {
+        grid-area: 1 / 1 / 1 / end;
+        max-width: 900px;
+        margin-top: 0;
+    }
+
+    .persona1 {
+        grid-area: 2 / 1 / 2 / 2;
+    }
+
+    .persona2 {
+        grid-area: 2 / 2 / 2 / 3;
+    }
+    /* Footer part */
+    footer {
+        font-size: 1em;
+    }
+}

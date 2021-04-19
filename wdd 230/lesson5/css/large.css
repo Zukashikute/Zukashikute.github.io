@@ -1,0 +1,67 @@
+@media only screen and (min-width: 50em) {
+    /*Header Part*/
+    .message {
+        font-size: 1.7em;
+    }
+
+    .header-headings h1 {
+        font-size: 2.2em;
+    }
+
+    .header-headings div {
+        font-size: 1.2em;
+    }
+
+    /*Nav Section*/
+    nav ul {
+        font-size: 1em;
+    }
+
+    /*Body Part*/
+
+    main {
+        max-width: 900px;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    /*Weather Summary and Pic*/
+    main h2 { 
+    font-size: 1.2em;
+    }
+
+    .weather-sum p {
+        font-size: 1em;
+    }
+
+    /* 5 Day Forecast Section*/
+    .forecast-sec {
+    font-size: 1.2em;
+    }
+
+    .data {
+        font-size: 1.1rem;
+    }
+
+    /*Article Section*/
+    section h3.normal-h3 {
+        font-size: 1.2em;
+    }
+
+    .article-sec p {
+        font-size: 1.05em;
+    }
+
+        /*Contact Info Section*/
+    .contact-sec p {
+        font-size: 1em;
+    }
+
+    /*Footer Part*/
+    footer {
+        max-width: 900px;
+        font-size: 1.1em;
+    }
+}

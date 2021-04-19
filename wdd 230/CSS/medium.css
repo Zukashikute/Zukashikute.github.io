@@ -1,0 +1,48 @@
+@media only screen and (min-width: 32.5em) {
+    /* Header part */
+    h1 {
+        font-size: 2.6rem;
+    }
+    
+    .student-info {
+        border-radius: 10px 10px 0px 0px;
+    }
+    .student-pic {
+        box-shadow: #5B5B5D 5px 5px 10px;
+        margin-right: 10px;
+        margin-top: 50px;
+        float: right;
+    }
+    
+    /*Body part */
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    #main-body {
+        border-radius: 10px 10px 10px 10px;
+    }
+    
+    .assign-links {
+        margin-left: 20px;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+
+    /*Footer part */
+    #contact-info {
+        border-radius: 0px 0px 10px 10px;
+    } 
+
+    .credits {
+        margin-top: 10px;
+        margin-bottom: 2.5px;
+        color:#34E5FF;
+        font-size: 15px;
+    }
+    
+    .time-update {
+        font-size: 14px;
+    }
+
+}

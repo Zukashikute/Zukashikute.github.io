@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Home Page for Scoots">
+    <title>Scoots</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <picture class="site-logo">
+                <source media="(max-width: 50em)" srcset="images/scoots-small.jpg">
+                <source media="(max-width: 80em)" srcset="images/scoots-medium.jpg">
+                <img src="images/scoots-large.jpg" alt="scoots-logo">
+            </picture>
+        </a>
+        <div class="site-heading">
+            <h1>SCOOTS</h1>
+            <p>The ride you are looking for!</p>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <div class="button-sec">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+        </div>
+        <ul id="primaryNav" class="hide navigation">
+            <li class="active"><a href="#">
+                    Home
+                </a></li>
+            <li><a href="rentals.html">
+                    Rentals
+                </a></li>
+            <li><a href="reservation.html">
+                    Reservation
+                </a></li>
+            <li><a href="tours.html">
+                    Tours
+                </a></li>
+            <li><a href="contact.html">
+                    Contact Us
+                </a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="mainpage-size">
+            <div class="home-wrap">
+                <div class="slideshow">
+                    <picture class="slideshow-pics">
+                        <source id="imageSmallSource" media="(max-width: 50em)"
+                            srcset="images/transition/cozumel-small.jpg">
+                        <source id="imageMedSource" media="(max-width: 80em)"
+                            srcset="images/transition/cozumel-medium.jpg">
+                        <img id="imageLargeSource" src="images/transition/cozumel-large.jpg" alt="cozumel-pic">
+                    </picture>
+                    <div class="hometext-wrap">
+                        <h2>Welcome to Scoots!</h2>
+                        <p>
+                            We are your one stop shop for touring Cozumel. Whether you want to cruise the streets with
+                            one
+                            of our scooters, or explore all that Cozumel has to offer with one of our Jeeps; we are here
+                            for
+                            you. Make your reservation now and let the fun begin!
+                        </p>
+                        <br>
+                        <p>
+                            Scoots is a fictitious 🛵 motor scooter rental company located on the island of Cozumel off
+                            the
+                            coast of Mexico in the western Caribbean Sea. This owner-operator company caters to locals,
+                            walk-in tourists, enthusiasts, and cruise-based touring groups and partnerships. The company
+                            has
+                            two physical rental locations on Cozumel. One is near the Playa del Carmen-Cozumel Ferry
+                            dock in
+                            el Centro de Cozumel and the other is near the Terminal Puerta Maya further south along the
+                            coast which caters to the cruise lines and patrons. The company promotes friendly and easy
+                            to
+                            rent services of motor scooters, jeeps, and side-by-sides ATVs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-quote">
+            <h3>"The best guide tour and rental services at Cozumel."</h3>
+        </div>
+        <div class="cozumel-cover effect">
+            <div class="playadelcarmen-weather">
+                <h3>Playa Del Carmen</h3>
+                <p><strong>Current Temperature:</strong> <span id="pdccurrTemp"></span>&#176;F</p>
+                <p><strong>Current Condition:</strong> <span id="pdccurrCondition"></span></p>
+                <p><strong>Humidity:</strong> <span id="pdchumidity"></span>%</p>
+            </div>
+            <form action="reservation.html">
+                <button class="reserve-button">Reserve Now</button>
+            </form>
+            <div class="puertamaya-weather">
+                <h3> Puerta Maya</h3>
+                <p><strong>Current Temperature:</strong> <span id="pmcurrTemp"></span>&#176;F</p>
+                <p><strong>Current Condition:</strong> <span id="pmcurrCondition"></span></p>
+                <p><strong>Humidity:</strong> <span id="pmhumidity"></span>%</p>
+            </div>
+        </div>
+        <div class="threeDayForecast-sec mainpage-size">
+            <h3 class="tdf-heading playa">Playa Del Carmen Forecast</h3>
+            <div id="playadelcarmen-forecast">
+            </div>
+            <h3 class="tdf-heading puerta">Puerta Maya Forecast</h3>
+            <div id="puertamaya-forecast">
+            </div>
+        </div>
+
+        <div class="rental-info mainpage-size">
+            <h3>Rental Types</h3>
+            <div class="rent-types ">
+                <div>
+                    <picture class="pics">
+                        <source media="(max-width: 80em)" srcset="images/phlandscape-medium.jpg"
+                            data-srcset="images/metro-ms.jpg">
+                        <img src="images/phlandscape-medium.jpg" data-src="images/metro-large.jpg"
+                            alt="hondametroscooter-pic">
+                    </picture>
+                    <p>The Metropolitan features a liquid-cooled 49cc four-stroke engine with fuel injection. It's
+                        quiet, economical, and super reliable.</p>
+                </div>
+                <div>
+                    <picture class="pics">
+                        <source media="(max-width: 80em)" srcset="images/phlandscape-medium.jpg"
+                            data-srcset="images/dio-ms.jpg">
+                        <img src="images/phlandscape-medium.jpg" data-src="images/dio-large.jpg"
+                            alt="hondadioscooter-pic">
+                    </picture>
+                    <p>Honda Dio scooter comes with cool graphics, LED headlamps, mobile charging socket & more exciting
+                        features along with dream mileage.</p>
+                </div>
+                <div>
+                    <picture class="pics">
+                        <source media="(max-width: 80em)" srcset="images/phlandscape-medium.jpg"
+                            data-srcset="images/pcx150-ms.jpg">
+                        <img src="images/phlandscape-medium.jpg" data-src="images/pcx150-large.jpg"
+                            alt="hondapcx150scooter-pic">
+                    </picture>
+                    <p>There's heavy traffic, tight parking and plenty of stoplight-to-stoplight action. Fortunately,
+                        the Honda PCX150 is purpose-built to tackle these challenges and deliver loads of fun along the
+                        way.</p>
+                </div>
+                <div>
+                    <picture class="pics">
+                        <source media="(max-width: 80em)" srcset="images/phlandscape-medium.jpg"
+                            data-srcset="images/pioneer-ms.jpg">
+                        <img src="images/phlandscape-medium.jpg" data-src="images/pioneer-large.jpg"
+                            alt="hondapioneeratv-pic">
+                    </picture>
+                    <p>Considered an off-road vehicle in which two people sit beside each other. The seating
+                        configuration is the same as in a car or truck. You have a steering wheel, pedals, and a gear
+                        shift just like a vehicle.</p>
+                </div>
+                <div>
+                    <picture class="pics">
+                        <source media="(max-width: 80em)" srcset="images/phlandscape-medium.jpg"
+                            data-srcset="images/jeep2door-ms.jpg">
+                        <img src="images/phlandscape-medium.jpg" data-src="images/jeep2door-large.jpg"
+                            alt="jeepwrangler2door-pic">
+                    </picture>
+                    <p>Close your eyes-now imagine trekking through the world's roughest terrain.</p>
+                </div>
+                <div>
+                    <picture class="pics">
+                        <source media="(max-width: 80em)" srcset="images/phlandscape-medium.jpg"
+                            data-srcset="images/jeep4door-ms.jpg">
+                        <img src="images/phlandscape-medium.jpg" data-src="images/jeep4door-large.jpg"
+                            alt="jeepwrangler4door-pic">
+                    </picture>
+                    <p>The Wrangler Unlimited is a four-door version of Jeep's iconic Wrangler SUV.</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-section">
+            <h3>Contact Us</h3>
+            <div class=contact-info>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-location-arrow"></i>1 Norte, Calle 14 Nte Esquina, Centro, 77710 Playa del
+                        Carmen, Mexico</li>
+                    <li><i class="fa-li fa fa-phone"></i>+52 984 873 4444</li>
+                    <li><i class="fa-li fa fa-envelope"></i>info@scoots.com</li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <a href="https://facebook.com/" target="_blank" rel="noopener"><i class="fa fa-facebook-square"
+                        aria-hidden="true"></i></a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa fa-twitter-square"
+                        aria-hidden="true"></i></a>
+                <a href="https://instagram.com/" target="_blank" rel="noopener"><i class="fa fa-skype"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &#169; 2020 Scoots - All Rights Reserved | <span id="dayUpdate"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
+</html>

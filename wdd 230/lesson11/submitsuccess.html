@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" WDD 230 Assignment Submit Page by Jared Joshua Balajadia.">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <link href="css/submitsuccess.css" rel="stylesheet">
+    <title>Submit Page</title>
+</head>
+
+<body>
+    <div class="message">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <header>
+        <picture class="site-icon">
+            <source media="(max-width: 600px)" srcset="images/weather-small.png">
+            <source media="(max-width: 800px)" srcset="images/weather-medium.png">
+            <img src="images/weather-large.png" alt="weather-icon">
+        </picture>
+        <section class="header-headings">
+            <h1>My Weather, Your Weather</h1>
+            <div>"My weather, your weather is here to meet your weather needs."</div>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+        <div class="button-sec">
+            <button onclick="toggleMenu()">&#9776;</button>
+        </div>
+        <ul id="primaryNav" class="hide navigation">
+            <li><a href="">
+                    <h2>Home</h2>
+                </a></li>
+            <li><a href="preston.html">
+                    <h2>Preston</h2>
+                </a></li>
+            <li><a href="sodasprings.html">
+                    <h2>Soda Springs</h2>
+                </a></li>
+            <li><a href="fishhaven.html">
+                    <h2>Fish Haven</h2>
+                </a></li>
+            <li class="active"><a href="stormcenter.html">
+                    <h2>Storm Center</h2>
+                </a></li>
+            <li><a href="gallery.html">
+                    <h2>Gallery</h2>
+                </a></li>
+        </ul>
+    </nav>
+    <main>
+        <h3>Storm Center Report</h3>
+        <p>Thank you for reporting the storm. We will consider our actions from the information provided.
+        We'll get help and will be there as soon as they can based off from the report's severity .</p>
+    </main>
+    <footer>
+        <div id="contact-info">
+            &#169; My Weather, Your Weather | Attributions | Jared Joshua Balajadia
+            <div id="dayUpdate"></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/site.js"></script>
+</body>
+
+</html>

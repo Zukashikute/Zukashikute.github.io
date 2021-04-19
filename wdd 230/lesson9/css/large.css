@@ -1,0 +1,206 @@
+@media only screen and (min-width: 55em) {
+
+    /*Header Part*/
+    .message {
+        font-size: 1.7em;
+    }
+
+    .header-headings h1 {
+        font-size: 2.2em;
+    }
+
+    .header-headings div {
+        font-size: 1.2em;
+    }
+
+    /*Nav Section*/
+    nav ul {
+        font-size: 1em;
+    }
+
+    /*Body Part*/
+    main {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    h2.home-heading {
+        font-size: 1.4em;
+        width: 65%;
+    }
+
+    /* Home */
+    /*Hero Image*/
+    picture.heroImg img {
+        display: block;
+        margin: 0 auto 10px;
+        width: auto;
+    }
+
+    .town-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: auto;
+    }
+
+    div.town-cards section img {
+        width: 90%;
+        align-self: center;
+        padding: 1em;
+    }
+
+    /* Town Cards Section */
+    .town-cards section {
+        display: grid;
+        margin: 2%;
+        width: auto;
+        padding: 0em;
+    }
+
+    .town-cards section:nth-child(1) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "single1"
+            "single2"
+            "single3"
+            "single4"
+            "single5"
+            "single6";
+    }
+
+    .town-cards section:nth-child(2) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "single1"
+            "single2"
+            "single3"
+            "single4"
+            "single5"
+            "single6";
+    }
+
+    .town-cards section:nth-child(3) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "single1"
+            "single2"
+            "single3"
+            "single4"
+            "single5"
+            "single6";
+    }
+
+
+    div.town-cards section img {
+        width: 90%;
+        align-self: center;
+        padding: 1em;
+    }
+
+    /*Town Heading Element*/
+    .town-cards section:nth-child(even) h2 {
+        grid-area: single1 / end;
+        align-self: end;
+    }
+
+    .town-cards section:nth-child(odd) h2 {
+        grid-area: single1 / end;
+        align-self: end;
+    }
+
+    /*Town Div Element*/
+    .town-cards section:nth-child(even) div {
+        grid-area: single2 / end;
+        height: 38px;
+    }
+
+    .town-cards section:nth-child(odd) div {
+        grid-area: single2 / end;
+        height: 38px;
+    }
+
+    /*Town Paragraph Element*/
+
+    .town-cards section p {
+        display: block;
+    }
+
+    /*Town Image Element*/
+    .town-cards section:nth-child(even) img {
+        grid-area: single6 / end;
+        justify-self: center;
+
+    }
+
+    .town-cards section:nth-child(odd) img {
+        grid-area: single6 / end;
+        justify-self: center;
+
+    }
+
+    /*Article Tri-Town Section */
+    .article-tritown {
+        width: 900px;
+        margin: 10px 0 0;
+    }
+
+    .article-sec {
+        width: 890px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "heading heading heading"
+            "fish prest soda"
+            "fish1 prest1 soda1";
+        grid-column-gap: 4px;
+    }
+
+    .article-sec h2 {
+        grid-area: heading;
+        width: -webkit-fill-available;
+    }
+
+    .article-sec h3.fishySec {
+        grid-area: fish;
+        width: -webkit-fill-available;
+    }
+
+    .article-sec h3.prestySec {
+        grid-area: prest;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        width: -webkit-fill-available;
+    }
+
+    .article-sec h3.sodaSec {
+        grid-area: soda;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        width: -webkit-fill-available;
+    }
+    
+    .article-sec ul {
+        margin-top: 0;
+    }
+
+    .article-sec ul li {
+        margin-left: -6%;
+    }
+
+    /*Contact Info Section*/
+    .contact-sec {
+        max-width: 900px;
+        margin: 0px auto 15px;
+    }
+
+    .contact-sec p {
+        font-size: 1em;
+    }
+
+    /*Footer Part*/
+    footer {
+        max-width: 900px;
+        font-size: 1.1em;
+    }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Reservation Page for Scoots">
+    <title>Scoots</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reservation.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <picture class="site-logo">
+                <source media="(max-width: 50em)" srcset="images/scoots-small.jpg">
+                <source media="(max-width: 80em)" srcset="images/scoots-medium.jpg">
+                <img src="images/scoots-large.jpg" alt="scoots-logo">
+            </picture>
+        </a>
+        <div class="site-heading">
+            <h1>SCOOTS</h1>
+            <p>The ride you are looking for!</p>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <div class="button-sec">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+        </div>
+        <ul id="primaryNav" class="hide navigation">
+            <li><a href="index.html">
+                    Home
+                </a></li>
+            <li><a href="rentals.html">
+                    Rentals
+                </a></li>
+            <li class="active"><a href="">
+                    Reservation
+                </a></li>
+            <li><a href="tours.html">
+                    Tours
+                </a></li>
+            <li><a href="contact.html">
+                    Contact Us
+                </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="mainpage-size">
+            <section class="rental-agreement">
+                <h2>Rental Agreement</h2>
+                <p>I authorize a deposit equal to $50.00 USD plus local state tax to be charged to my credit card for
+                    each scooter rented and the final amount due
+                    24 hours before equipment rental begins. I understand I am fully responsible for the scooter during
+                    the rental period and any damage or loss
+                    incurred while in my possession and affirm I have provided accurate height and weight information to
+                    assure proper use and performance of the
+                    equipment I am renting. I may cancel my rental and receive a full refund up to 48 hours prior to my
+                    rental delivery time and must call in my
+                    cancellation to Scoots at 1.800.333.0594 and receive a cancellation confirmation number. I
+                    understand that I qualify for free
+                    delivery only if I choose to rent a scooter for two (2) days or more and that my delivery can be
+                    made to a Cozumel hotel, Airbnb, or
+                    private residence. </p>
+                <p>I affirm that non one under 12 years of age will be allowed to ride on the scooters. I am aware that
+                    fuel
+                    charge is not included in the rental price.
+                </p>
+
+                <p>I hereby agree to take sole responsibility for any damages outside of normal wear and tear of the
+                    mobility scooter unit including accessories
+                    such as the battery charger and key while in my possession; my possession starts when my rental
+                    equipment is delivered and ends when the rental
+                    equipment is back in the possession of Scoots. I understand that I am personally responsible for all
+                    vandalism and or loss of equipment
+                    and I authorize Scoots to charge any damages to my credit card provided for rental. I understand and
+                    authorize
+                    Scoots to charge my credit card a lost battery charger fee of $80 and a lost key fee of $10. In the
+                    case that I
+                    request Scooter Vacations to deliver to me a replacement battery charger or key, or if I request
+                    delivery of additional batteries because I have
+                    not properly charged my original batteries after each use.</p>
+
+
+                <p>Waiver of Liability and Hold Harmless Agreement</p>
+
+                <p>I hereby release, waive, and discharge the right to seek medical reimbursement or the legal
+                    prosecution of Scoots for
+                    any physical injury resulting or property damage from the use of the rental equipment provided by
+                    Scoots. I agree to be the sole person driving the
+                    rental scooter and I am fully responsible for any person/s who, with or without my consent, sit on,
+                    stand, ride on or operate the mobility scooter.</p>
+
+                <p>I agree to immediately cease using the rental equipment if I find or suspect any fault with the
+                    equipment. I hereby indemnify Scoots for any legal
+                    prosecution from my rental or use of the equipment including but not limited to physical injury
+                    resulting to myself or someone else or property damage
+                    from the rental equipment provided by Scoots.</p>
+
+                <p>It is my express intent that this Release and Hold Harmless Agreement shall bind my family if I am
+                    alive and my heirs, assigns and personal
+                    representative if I am deceased. It shall be deemed as a release, waiver, discharge, and covenant
+                    not to sue Scoots, independent contractors, officers,
+                    agents, employees, and affiliates.</p>
+                    <hr>
+                <form action="confirmation.html" method="get">
+                    <fieldset class="field1">
+                        <legend>Information</legend>
+                        <label>Name<input type="text" name="fullName" class="textbox" required
+                                pattern="[a-zA-Z\p{L} \.\-]{5,}"></label>
+                        <label>Phone Number<input type="tel" name="phoneNumber" class="textbox" required pattern="^\d{3}.\d{3}.\d{4}"
+                                placeholder="123-123-1234"></label>
+                        <label>Email<input type="text" name="email" class="textbox" required placeholder="example@gmail.com"></label>
+                        <label>State/Country<input type="text" name="country"></label>
+                        <label>Cruise Line<input id="cruiseLine" type="text"></label>
+                    </fieldset>
+                    <fieldset class="field2">
+                        <legend>Rental Details</legend>
+                        <label>Date<input type="date" name="date"></label>
+                        <label for="rentalType">Rental Type</label>
+                        <select id="rentalType">
+                            <option>Honda Metro Scooter</option>
+                            <option>Honda Dio Scooter</option>
+                            <option>Honda PCX150 Scooter</option>
+                            <option>Honda Pioneer ATV</option>
+                            <option>Jeep Wrangler - 4 door with a/c</option>
+                            <option>Jeep Wrangler - 2 door</option>
+                        </select>
+                        <label for="duration">Duration</label>
+                        <select id="duration">
+                            <option>Half Day</option>
+                            <option>1 Day</option>
+                            <option>2 Days</option>
+                            <option>3 Days</option>
+                            <option>4 Days</option>
+                            <option>5 Days</option>
+                            <option>6 Days</option>
+                            <option>1 Week</option>
+                        </select>
+                        <label for="addInfo">Additional comments:</label>
+                        <textarea id="comments" name="addInfo" rows="5" cols="30"
+                            placeholder="Any questions or concerns? Put it here."></textarea>
+                        <input type="submit" value="Reserve Now" class="submit-button">
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+
+    <div class="contact-section">
+        <h3>Contact Us</h3>
+        <div class=contact-info>
+            <ul class="fa-ul">
+                <li><i class="fa-li fa fa-location-arrow"></i>1 Norte, Calle 14 Nte Esquina, Centro, 77710 Playa del
+                    Carmen, Mexico</li>
+                <li><i class="fa-li fa fa-phone"></i>+52 984 873 4444</li>
+                <li><i class="fa-li fa fa-envelope"></i>info@scoots.com</li>
+            </ul>
+        </div>
+        <div class="social-links">
+            <a href="https://facebook.com/" target="_blank" rel="noopener"><i class="fa fa-facebook-square"
+                    aria-hidden="true"></i></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa fa-twitter-square"
+                    aria-hidden="true"></i></a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener"><i class="fa fa-skype"
+                    aria-hidden="true"></i></a>
+        </div>
+    </div>
+    </main>
+    <footer>
+        &#169; 2020 Scoots - All Rights Reserved | <span id="dayUpdate"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/site.js"></script>
+</body>
+
+</html>

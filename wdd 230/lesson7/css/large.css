@@ -1,0 +1,54 @@
+@media only screen and (min-width: 55em) {
+    /*Header Part*/
+    .message {
+        font-size: 1.7em;
+    }
+
+    .header-headings h1 {
+        font-size: 2.2em;
+    }
+
+    .header-headings div {
+        font-size: 1.2em;
+    }
+
+    /*Nav Section*/
+    nav ul {
+        font-size: 1em;
+    }
+
+    /*Body Part*/
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h2.weather-gal {
+        font-size: 1.4em;
+        width: 98%;
+    }
+
+    /*Gallery */
+    figcaption {
+        font-size: 1.1em;
+    }
+
+    figure:hover {
+        animation: box-glow 1s ease-out infinite alternate; 
+    }
+
+        @keyframes box-glow {
+            from {
+                box-shadow: 2px 2px 5px 1px#F7C678, 4px 4px 5px 1px#FD815E;
+            }
+            to {
+                box-shadow: 4px 4px 10px 2px #F7C678, 8px 8px 10px 2px #FD815E;
+            }
+        }
+
+    /*Footer Part*/
+    footer {
+        max-width: 900px;
+        font-size: 1.1em;
+    }
+}

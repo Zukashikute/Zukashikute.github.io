@@ -1,0 +1,222 @@
+/*Colors
+#F34213
+
+*/
+
+
+
+html {
+    font-size: 16px;
+}
+
+/* Header and navigation part */
+header {
+    text-align: center;
+    padding: 1em;
+    background: linear-gradient(0deg, #F7C678, #FD815E);
+}
+
+h1 {
+    text-align: center;
+    font: 1.6em Lemon;
+    color: #3B403A;
+    margin: 10px auto 0px;
+}
+
+/* Navigation menu settings */
+nav ul {
+    max-width: 400px;
+    margin: 20px auto 6px;
+    background-color: #FC6136;
+    border-radius: 20px;
+    padding: .4em;
+    display: flex;
+}
+
+nav ul li {
+    flex: 1 1 100%;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: IBM Plex Serif;
+    color: #FECFC2;
+}
+
+a:hover {
+    color: #F8F08C;
+}
+h2 {
+    font-size: 1.3em;
+}
+
+
+/*Body part */
+main {
+    max-width: 300px;
+    margin: 16px auto;
+}
+
+section { 
+    font: 14px IBM Plex Serif;
+}
+
+section p {
+    font-weight: bold;
+}
+
+table, tr, td {
+    border: 1px solid black;
+    padding: 1em;
+    text-align: center;
+    font-family: IBM Plex Serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hide-col {
+    display: none;
+}
+
+/*Site Header Row*/
+.bg-sample {
+    background: linear-gradient(0deg, #F7C678, #FD815E);
+}
+
+/*Primary Navigation*/
+.bg1-sample {
+    background-color: #FC6136;
+    font-size: 25px;
+}
+
+/*Footer Navigation*/
+.bg2-sample {
+    background: linear-gradient(0deg, #FD815E, #F7C678);
+}
+
+.h2-sample {
+    font-size: 25px;
+    color: #FECFC2;
+}
+
+.h3-sample {
+    font-size: 20px;
+    color: #FB410E;
+}
+
+/* Footer part */
+footer {
+    text-align: center;
+    background: linear-gradient(0deg, #FD815E, #F7C678);
+    font: 0.8em IBM Plex Serif;
+    padding: 5px 2px;
+    font-weight: bold;
+}
+
+footer a {
+    color: black;
+}
+
+.credits {
+    margin: 5px auto;
+}
+
+.time-update {
+    margin-bottom: 5px;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+/*Medium Devices*/
+@media only screen and (min-width: 35em) {
+/* Header part */
+    h1 {
+        font-size: 1.8em;
+    }
+
+    /*Navigation menu settings*/
+    nav ul {
+        max-width: 600px;
+        margin: 25px auto 8px;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+        list-style-type: none;
+
+    }
+
+    .hide-col {
+        display: none;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    /* Body part */
+    main {
+        max-width: 500px;
+        margin: 18px auto;
+    }
+
+    section {
+        font-size: 16px;
+    }
+
+    table, tr, td {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    
+    /* Footer part */
+    footer {
+        font-size: 0.9em;
+    }
+}
+/*----------------------------------------------------------------------------------------------------*/
+/*Large Devices*/
+@media only screen and (min-width: 50em) {
+    /* Header part */
+    h1 {
+        font-size: 2em;
+    }
+
+    /*Navigation menu settings*/
+    nav ul {
+        max-width: 1000px;
+        margin: 30px auto 10px;
+    }
+
+    nav ul li {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+    }
+
+    .hide-col {
+        display: table-cell;
+    }
+
+    /* Body part */
+    main {
+        max-width: 900px;
+        margin: 20px auto;
+    }
+
+    section {
+        font-size: 18px;
+    }
+
+    table, tr, td {
+        font-size: 18px;
+    }
+    /* Footer part */
+    footer {
+        font-size: 1em;
+    }
+}

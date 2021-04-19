@@ -1,0 +1,99 @@
+@media only screen and (min-width: 35em) {
+    /*Header Part*/
+    header {
+        text-align: center;
+}
+
+    .message {
+    font-size: 1.4em;
+}
+
+    .header-headings h1 {
+        font-size: 1.8em;
+ 
+    }
+    
+    .header-headings div {
+        font-size: 1.1em;
+    }
+
+    /*Nav Section*/
+    nav ul {
+        font-size: 0.8em;
+        display: flex;
+        flex-direction: unset;
+        padding-left: 0;
+    }
+
+    nav ul li {
+        border-bottom: none;
+    }
+
+    nav ul.hide {
+        display: none;
+    }
+    
+    nav div button {
+        display: none;
+    }
+    
+    nav ul.hide {
+        display: flex;
+    }
+
+    /*Body Part*/
+
+    h2.storm-rep {
+        font-size: 1.2em;
+        width: 70%;
+        border-radius: 10px;
+        border: 1px solid #3B403A;
+    }
+
+    /* Storm Center */
+    form {
+        font-size: 1.1em;
+    }
+
+    legend {
+        font-size: 1.2em;
+        margin-left: 15%;
+        text-align: left;
+    }
+    
+    form label {
+        margin-left: 4%;
+    }
+
+    fieldset {
+        padding: 1.5em 1.5em 0.7em 1.5em;
+    }
+
+    input.textbox, select.textbox {
+        max-width: 18rem;
+    }
+
+    
+    .submitBttn {
+        margin-left: 18%;
+        margin-top: 2%;
+        margin-bottom: 0;
+    }
+
+    #severityRange, select.stormReg {
+        width: 100%;
+        max-width: 19rem;
+    }
+
+    #addComment {
+        width: 90%;
+        display: inline;
+        margin: 0 auto;
+    }
+
+    /*Footer Part*/
+    footer {
+        max-width: 600px;
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" WDD 230 Assignment Weather Gallery Page by Jared Joshua Balajadia.">
+    <link href="../CSS/normalize.css" rel="stylesheet">
+    <link href="css/gallery-7.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <title>Weather Gallery Page</title>
+</head>
+
+<body>
+    <div class="message">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <header>
+        <picture class="site-icon">
+            <source media="(max-width: 600px)" srcset="images/weather-small.png">
+            <source media="(max-width: 800px)" srcset="images/weather-medium.png">
+            <img src="images/weather-large.png" alt="weather-icon">
+        </picture>
+        <section class="header-headings">
+            <h1>My Weather, Your Weather</h1>
+            <div>"My weather, your weather is here to meet your weather needs."</div>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+        <div class="button-sec">
+            <button onclick="toggleMenu()">&#9776;</button>
+        </div>
+        <ul id="primaryNav" class="hide navigation">
+            <li><a href="../lesson9/index.html">
+                    <h2>Home</h2>
+                </a></li>
+            <li><a href="../lesson6/preston-6.html">
+                    <h2>Preston</h2>
+                </a></li>
+            <li><a href="#">
+                    <h2>Soda Springs</h2>
+                </a></li>
+            <li><a href="#">
+                    <h2>Fish Haven</h2>
+                </a></li>
+            <li><a href="../lesson8/stormcenter.html">
+                    <h2>Storm Center</h2>
+                </a></li>
+            <li class="active"><a href="#">
+                    <h2>Gallery</h2>
+                </a></li>
+        </ul>
+    </nav>
+        <h2 class="weather-gal">Weather Gallery</h2>
+    <main>
+        <figure>
+            <picture class="pics">
+                <source media="(max-width: 600px)" srcset="images/placeholder.png" data-srcset="images/autumn-small.jpg">
+                <source media="(max-width: 800px)" srcset="images/placeholder.png" data-srcset="images/autumn-medium.jpg">
+                <img src="images/placeholder.png" data-src="images/autumn-large.jpg" alt="autumn-pic">
+            </picture>
+            <figcaption>Our mother earth is blooming.</figcaption>
+        </figure>
+        <figure>
+            <picture class="pics">
+                <source media="(max-width: 600px)" srcset="images/placeholder.png" data-srcset="images/fall-small.jpg">
+                <source media="(max-width: 800px)" srcset="images/placeholder.png" data-srcset="images/fall-medium.jpg">
+                <img src="images/placeholder.png" data-src="images/fall-large.jpg" alt="fall-pic">
+            </picture>
+            <figcaption>Our mother earth is hibernating.</figcaption>
+        </figure>
+        <figure>
+            <picture class="pics">
+                <source media="(max-width: 600px)" srcset="images/placeholder.png" data-srcset="images/lightning-small.jpg">
+                <source media="(max-width: 800px)" srcset="images/placeholder.png" data-srcset="images/lightning-medium.jpg">
+                <img src="images/placeholder.png" data-src="images/lightning-large.jpg" alt="lightning-pic">
+            </picture>
+            <figcaption>Our mother earth is shouting in rage.</figcaption>
+        </figure>
+        <figure>
+            <picture class="pics">
+                <source media="(max-width: 600px)" srcset="images/placeholder.png" data-srcset="images/rainy-small.jpg">
+                <source media="(max-width: 800px)" srcset="images/placeholder.png" data-srcset="images/rainy-medium.jpg">
+                <img src="images/placeholder.png" data-src="images/rainy-large.jpg" alt="rainy-pic">
+            </picture>
+            <figcaption>Our mother earth is sad.</figcaption>
+        </figure>
+        <figure>
+            <picture class="pics">
+                <source media="(max-width: 600px)" srcset="images/placeholder.png" data-srcset="images/sunny-small.jpg">
+                <source media="(max-width: 800px)" srcset="images/placeholder.png" data-srcset="images/sunny-medium.jpg">
+                <img src="images/placeholder.png" data-src="images/sunny-large.jpg" alt="sunny-pic">
+            </picture>
+            <figcaption>Our mother earth is happy.</figcaption>
+        </figure>
+        <figure>
+            <picture class="pics">
+                <source media="(max-width: 600px)" srcset="images/placeholder.png" data-srcset="images/sunrise-small.jpg">
+                <source media="(max-width: 800px)" srcset="images/placeholder.png" data-srcset="images/sunrise-medium.jpg">
+                <img src="images/placeholder.png" data-src="images/sunrise-large.jpg" alt="sunrise-pic">
+            </picture>
+            <figcaption>Our mother earth is buffering.</figcaption>
+        </figure>
+        <figure>
+            <picture class="pics">
+                <source media="(max-width: 600px)" srcset="images/placeholder.png" data-srcset="images/tornado-small.jpg">
+                <source media="(max-width: 800px)" srcset="images/placeholder.png" data-srcset="images/tornado-medium.jpg">
+                <img src="images/placeholder.png" data-src="images/tornado-large.jpg" alt="tornado-pic">
+            </picture>
+            <figcaption>Our mother earth is pissed.</figcaption>
+        </figure>
+        <figure>
+            <picture class="pics">
+                <source media="(max-width: 600px)" srcset="images/placeholder.png" data-srcset="images/windy-small.jpg">
+                <source media="(max-width: 800px)" srcset="images/placeholder.png" data-srcset="images/windy-medium.jpg">
+                <img src="images/placeholder.png" data-src="images/windy-large.jpg" alt="windy-pic">
+            </picture>
+            <figcaption>Our mother earth is moody.</figcaption>
+        </figure>
+        <figure>
+            <picture class="pics">
+                <source media="(max-width: 600px)" srcset="images/placeholder.png" data-srcset="images/winter-small.jpg">
+                <source media="(max-width: 800px)" srcset="images/placeholder.png" data-srcset="images/winter-medium.jpg">
+                <img src="images/placeholder.png" data-src="images/winter-large.jpg" alt="winter-pic">
+            </picture>
+            <figcaption>Our mother earth is cold.</figcaption>
+        </figure>
+    </main>
+    <footer>
+        <div id="contact-info">
+            &#169; My Weather, Your Weather | Attributions | Jared Joshua Balajadia
+            <div id="dayUpdate"></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gallery-7.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['IBM Plex Serif', 'Lemon']
+            }
+        });
+    </script>
+</body>
+
+</html>

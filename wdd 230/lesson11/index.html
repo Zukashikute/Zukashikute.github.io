@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" WDD 230 Assignment Preston Page by Jared Joshua Balajadia.">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <title>Home Page</title>
+</head>
+
+<body>
+    <div class="message">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <header>
+        <picture class="site-icon">
+            <source media="(max-width: 600px)" srcset="images/weather-small.png">
+            <source media="(max-width: 800px)" srcset="images/weather-medium.png">
+            <img src="images/weather-large.png" alt="weather-icon">
+        </picture>
+        <section class="header-headings">
+            <h1>My Weather, Your Weather</h1>
+            <div>"My weather, your weather is here to meet your weather needs."</div>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+        <div class="button-sec">
+            <button onclick="toggleMenu()">&#9776;</button>
+        </div>
+        <ul id="primaryNav" class="hide navigation">
+            <li class="active"><a href="#">
+                    <h2>Home</h2>
+                </a></li>
+            <li><a href="preston.html">
+                    <h2>Preston</h2>
+                </a></li>
+            <li><a href="sodasprings.html">
+                    <h2>Soda Springs</h2>
+                </a></li>
+            <li><a href="fishhaven.html">
+                    <h2>Fish Haven</h2>
+                </a></li>
+            <li><a href="stormcenter.html">
+                    <h2>Storm Center</h2>
+                </a></li>
+            <li><a href="gallery.html">
+                    <h2>Gallery</h2>
+                </a></li>
+        </ul>
+    </nav>
+    <!--Hero Image-->
+    <main>
+        <h2 class="home-heading">Home</h2>
+        <picture class="home-Img heroImg pics">
+            <source media="(max-width: 600px)" srcset="images/placeholderlandscape.jpg" data-srcset="images/hero-small.jpg">
+            <source media="(max-width: 800px)" srcset="images/placeholderlandscape.jpg" data-srcset="images/hero-medium.jpg">
+            <img src="images/placeholderlandscape.jpg" data-src="images/hero-large.jpg" alt="hero-pic">
+        </picture>
+
+        <!--Cards Section-->
+        <div class="town-cards">
+
+        </div>
+
+        <!--Article Section-->
+        <div class="article-tritown">
+            <section class="article-sec">
+                <h2>Tri-Town Upcoming Events</h2>
+                <h3 class="fishySec">Fish Haven</h3>
+                <ul>
+                    <li>April 1: How Big Was That Fish Day</li>
+                    <li>May 15-30: Rush the Creek Days</li>
+                    <li>July 24: Bear Lake Blunder Run</li>
+                    <li>December 12: Light the Tree</li>
+                </ul>
+                <h3 class="prestySec">Preston</h3>
+                <ul>
+                    <li>March 29: Work Creek Revival</li>
+                    <li>July 8-12: Napoleon Dynamite Festival</li>
+                    <li>November 2-4: Freedom Days</li>
+                </ul>
+                <h3 class="sodaSec">Soda Springs</h3>
+                <ul>
+                    <li>February 29: Geyser Song Day</li>
+                    <li>May 1-6: Days of May Celebration</li>
+                    <li>October 15-16: Octoberfest</li>
+                </ul>
+            </section>
+        </div>
+        <!--Contact Info Section-->
+        <div class="contact-sec ">
+            <h2> Contact Information</h2>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="400" height="300" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=30%20N%201st%20E%20Preston%2C%20ID%2083623&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a
+                        href="https://embedgooglemap.net/mapv2/"></a></div>
+            </div>
+            <p>My Weather, Your Weather <br>
+                30 N 1st E <br>
+                Preston, ID 83623
+                <br>
+                <br>
+                ☎ 963 989 5214 <br>
+                ✉ mwyw123@mail.org</p>
+        </div>
+    </main>
+    <footer>
+        <div id="contact-info">
+            &#169; My Weather, Your Weather | Attributions | Jared Joshua Balajadia
+            <div id="dayUpdate"></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/towncards.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
+
+</html>

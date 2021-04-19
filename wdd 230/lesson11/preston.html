@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" WDD 230 Assignment Preston Page by Jared Joshua Balajadia.">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <link href="css/preston.css" rel="stylesheet">
+    <title>Preston Town Page</title>
+</head>
+
+<body>
+    <div class="message">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <header>
+        <picture class="site-icon">
+            <source media="(max-width: 600px)" srcset="images/weather-small.png">
+            <source media="(max-width: 800px)" srcset="images/weather-medium.png">
+            <img src="images/weather-large.png" alt="weather-icon">
+        </picture>
+        <section class="header-headings">
+            <h1>My Weather, Your Weather</h1>
+            <div>"My weather, your weather is here to meet your weather needs."</div>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+        <div class="button-sec">
+            <button onclick="toggleMenu()">&#9776;</button>
+        </div>
+        <ul id="primaryNav" class="hide navigation">
+            <li><a href="index.html">
+                    <h2>Home</h2>
+                </a></li>
+            <li class="active"><a href="#">
+                    <h2>Preston</h2>
+                </a></li>
+            <li><a href="sodasprings.html">
+                    <h2>Soda Springs</h2>
+                </a></li>
+            <li><a href="fishhaven.html">
+                    <h2>Fish Haven</h2>
+                </a></li>
+            <li><a href="stormcenter.html">
+                    <h2>Storm Center</h2>
+                </a></li>
+            <li><a href="gallery.html">
+                    <h2>Gallery</h2>
+                </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="preston-heading">Preston Idaho</h2>
+        <section class="weather-sec">
+            <div class="weather-sum">
+                <img class="umbrella-pic" src="images/umbrella.png" alt="weather1-icon">
+                <h2>Weather Summary</h2>
+                <p><strong>Currently:</strong> <span id="currTemp"></span>&#176;F and <span id="currCondition"></span>
+                </p>
+                <p><strong>High:</strong> <span class="temp" id="highTemp"></span>&#176;F </p>
+                <p><strong>Wind Chill:</strong> <span class="wind-chill" id="windChill"></span><span
+                        class="wc-deg"></span></p>
+                <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+                <p><strong>Wind Speed:</strong> <span class="wind-speed" id="windSpeed"></span> MPH</p>
+            </div>
+            <!--Events Section-->
+            <div class="preston-events">
+            </div>
+            <picture class="preston-img pics">
+                <source media="(max-width: 600px)" srcset="images/placeholderlandscape.jpg"
+                    data-srcset="images/preston-small.jpg">
+                <source media="(max-width: 800px)" srcset="images/placeholderlandscape.jpg"
+                    data-srcset="images/preston-medium.jpg">
+                <img src="images/placeholderlandscape.jpg" data-src="images/preston-large.jpg" alt="preston-pic">
+            </picture>
+        </section>
+        <section class="forecast-sec">
+            <h2>5 Day Forecast</h2>
+            <div id="forecast-table">
+            </div>
+        </section>
+        <section class="article-sec">
+            <picture class="pics">
+                <source media="(max-width: 600px)" srcset="images/placeholderlandscape.jpg"
+                    data-srcset="images/prestonart-small.jpg">
+                <source media="(max-width: 800px)" srcset="images/placeholderlandscape.jpg"
+                    data-srcset="images/prestonart-medium.jpg">
+                <img src="images/placeholderlandscape.jpg" data-src="images/prestonart-large.jpg" alt="nature-pic">
+            </picture>
+            <h2>Napoleon Dynamite</h2>
+            <p> Twelve years ago, Preston was a town like any other, a relatively quiet part of southern Idaho with a
+                population of just under 5,000 people. Known for That Famous Preston Night Rodeo and its close proximity
+                to the site of the Bear River Massacre, most of the United States would likely have been unable to
+                locate it on a map.
+
+                Things would change for the small Franklin County town with the release of "Napoleon Dynamite" in 2004.
+                The quotable comedy film written and directed by Preston native Jared Hess became a surprise hit,
+                earning $46.1 million at the box office on a budget of only $400,000. As the site of the film, Preston
+                gained a foothold in pop culture, the Herald Journal reported.
+
+                "Some people worry that the movie gives us a bad name," Preston resident Rhonda Gregerson said. "But
+                really, it gives us a great name. The movie put us right on the map; it's our golden goose."</p>
+        </section>
+        <section class="contact-sec">
+            <h2> Contact Information</h2>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="400" height="300" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=30%20N%201st%20E%20Preston%2C%20ID%2083623&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a
+                        href="https://embedgooglemap.net/mapv2/"></a></div>
+            </div>
+            <p>My Weather, Your Weather <br>
+                30 N 1st E <br>
+                Preston, ID 83623
+                <br>
+                <br>
+                ☎ 963 989 5214 <br>
+                ✉ mwyw123@mail.org</p>
+        </section>
+    </main>
+    <footer>
+        <div id="contact-info">
+            &#169; My Weather, Your Weather | Attributions | Jared Joshua Balajadia
+            <div id="dayUpdate"></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/preston.js"></script>
+</body>
+
+</html>

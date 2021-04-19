@@ -1,0 +1,85 @@
+.gallery-pics {
+    margin: 0 auto 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+
+h2.weather-gal {
+    color: #3B403A;
+    background: linear-gradient(90deg, #F7C678, #FD815E);
+    font: 1.4em Lemon;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    border-top-left-radius: 20px;;
+    border-top-right-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+figure {
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px 1px gray;
+    width: fit-content;
+}
+
+figcaption {
+    padding: 0.9em;
+    font: 1em IBM Plex Serif;
+}
+
+@media only screen and (min-width: 50em) {
+    /*Body Part*/
+    .gallery-pics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h2.weather-gal {
+        font-size: 1.6em;
+        width: 95%;
+        border-radius: 10px;
+        border: 1px solid #3B403A;
+    }
+
+    figcaption {
+        font-size: 1em;
+    }
+}
+@media only screen and (min-width: 80em) {
+    /*Body Part*/
+
+    .gallery-pics {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h2.weather-gal {
+        font-size: 1.8em;
+        width: 98%;
+    }
+
+    /*Gallery */
+    figcaption {
+        font-size: 1.1em;
+    }
+
+    figure:hover {
+        animation: box-glow 1s ease-out infinite alternate; 
+    }
+
+        @keyframes box-glow {
+            from {
+                box-shadow: 2px 2px 5px 1px#F7C678, 4px 4px 5px 1px#FD815E;
+            }
+            to {
+                box-shadow: 4px 4px 10px 2px #F7C678, 8px 8px 10px 2px #FD815E;
+            }
+        }
+}
+

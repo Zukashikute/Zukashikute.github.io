@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" WDD 230 Assignment Preston Page by Jared Joshua Balajadia.">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <link href="css/fishhaven.css" rel="stylesheet">
+    <title>Fish Haven Page</title>
+</head>
+
+<body>
+    <div class="message">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <header>
+        <picture class="site-icon">
+            <source media="(max-width: 600px)" srcset="images/weather-small.png">
+            <source media="(max-width: 800px)" srcset="images/weather-medium.png">
+            <img src="images/weather-large.png" alt="weather-icon">
+        </picture>
+        <section class="header-headings">
+            <h1>My Weather, Your Weather</h1>
+            <div>"My weather, your weather is here to meet your weather needs."</div>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+        <div class="button-sec">
+            <button onclick="toggleMenu()">&#9776;</button>
+        </div>
+        <ul id="primaryNav" class="hide navigation">
+            <li><a href="index.html">
+                    <h2>Home</h2>
+                </a></li>
+            <li><a href="preston.html">
+                    <h2>Preston</h2>
+                </a></li>
+            <li><a href="sodasprings.html">
+                    <h2>Soda Springs</h2>
+                </a></li>
+            <li class="active"><a href="#">
+                    <h2>Fish Haven</h2>
+                </a></li>
+            <li><a href="stormcenter.html">
+                    <h2>Storm Center</h2>
+                </a></li>
+            <li><a href="gallery.html">
+                    <h2>Gallery</h2>
+                </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="fishhaven-heading">Fish Haven</h2>
+        <section class="weather-sec">
+            <div class="weather-sum">
+                <img class="umbrella-pic" src="images/umbrella.png" alt="weather1-icon">
+                <h2>Weather Summary</h2>
+                <p><strong>Currently:</strong> <span id="currTemp"></span>&#176;F and <span id="currCondition"></span>
+                </p>
+                <p><strong>High:</strong> <span class="temp" id="highTemp"></span>&#176;F </p>
+                <p><strong>Wind Chill:</strong> <span class="wind-chill" id="windChill"></span><span
+                        class="wc-deg"></span></p>
+                <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+                <p><strong>Wind Speed:</strong> <span class="wind-speed" id="windSpeed"></span> MPH</p>
+            </div>
+            <!--Events Section-->
+            <div class="fishhaven-events">
+            </div>
+            <picture class="preston-img pics">
+                <source media="(max-width: 600px)" srcset="images/placeholderlandscape.jpg"
+                    data-srcset="images/fishhaven-small.jpg">
+                <source media="(max-width: 800px)" srcset="images/placeholderlandscape.jpg"
+                    data-srcset="images/fishhaven-medium.jpg">
+                <img src="images/placeholderlandscape.jpg" data-src="images/fishhaven-large.jpg" alt="fishhaven-pic">
+            </picture>
+        </section>
+        <section class="forecast-sec">
+            <h2>5 Day Forecast</h2>
+            <div id="forecast-table">
+            </div>
+        </section>
+        <section class="article-sec">
+            <picture class="pics">
+                <source media="(max-width: 600px)" srcset="images/placeholderlandscape.jpg"
+                    data-srcset="images/fishhavenart-small.jpg">
+                <source media="(max-width: 800px)" srcset="images/placeholderlandscape.jpg"
+                    data-srcset="images/fishhavenart-medium.jpg">
+                <img src="images/placeholderlandscape.jpg" data-src="images/fishhavenart-large.jpg" alt="nature-pic">
+            </picture>
+            <h2>Paradise for Residents</h2>
+            <p> FISH HAVEN, Idaho — It's an undiscovered paradise. Most people who drive by recognize the raw beauty of
+                a place ringed by high desert mountains and bordered by the shores of a vast natural lake.
+
+                In winter the hills outside this small paradise echo with the sharp whine of snow machines and in the
+                summer thousands of tourists ply the lake's bright blue waters with water skis or fishing poles.
+
+                But they don't live there. It's different living in Fish Haven.
+
+                The little town sits just on the Idaho side of U.S. Highway 89 tucked in between Bear Lake's west side
+                and the mountains.
+
+                It's not technically a city or a town, it's really nothing more than the proverbial wide spot in the
+                road. But people call it a town even though there isn't a city council, just the Bear Lake County
+                Commission that oversees development there.
+
+                Only 50 to 100 people call it home, depending on the weather.</p>
+        </section>
+        <section class="contact-sec">
+            <h2> Contact Information</h2>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="400" height="300" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=30%20N%201st%20E%20Preston%2C%20ID%2083623&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe><a
+                        href="https://embedgooglemap.net/mapv2/"></a></div>
+            </div>
+            <p>My Weather, Your Weather <br>
+                30 N 1st E <br>
+                Preston, ID 83623
+                <br>
+                <br>
+                ☎ 963 989 5214 <br>
+                ✉ mwyw123@mail.org</p>
+        </section>
+    </main>
+    <footer>
+        <div id="contact-info">
+            &#169; My Weather, Your Weather | Attributions | Jared Joshua Balajadia
+            <div id="dayUpdate"></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/fishhaven.js"></script>
+</body>
+
+</html>

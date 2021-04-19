@@ -1,0 +1,234 @@
+/*Header Part*/
+header {
+    background: linear-gradient(180deg, #F7C678, #FD815E);
+    display: flex;
+    padding: 5px 2px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header picture {
+    display: flex;
+    justify-content: center;
+}
+
+picture.site-icon {
+    margin: 5px;
+}
+
+
+.message {
+    display: none;
+    padding-top: 0.8em;
+    background-color: #F7C678;
+    color: #3B403A;
+    font: 1.1em IBM Plex Serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header-headings {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-right: 14px;
+}
+
+.header-headings h1 {
+    font: 1.6em Lemon;
+    color: #3B403A;
+    margin-bottom: 0px;
+}
+
+.header-headings div {
+    font: 1em IBM Plex Serif;
+    font-weight: bold;
+}
+
+
+
+/*Button Section*/
+
+button {
+    background-color: #FC6136;
+    color: #3B403A;
+    font-size: 30px;
+    width: 100%;
+    border-color: #3B403A;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: none;
+    border-right: none;
+}
+
+div.button-sec {
+    display: flex;
+    justify-content: center;
+}
+
+/*Navigation Section*/
+nav ul.hide {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    background-color: #FC6136;
+    text-align: center;
+    font-weight: bold;
+    font: 0.8em IBM Plex Serif;
+    padding-left: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    flex: 1 1 100%;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: IBM Plex Serif, serif;
+    color: #FECFC2;
+}
+
+li.active a h2 {
+    color: black;
+    font-family: IBM Plex Serif, serif;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #F3E52B;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Body Part*/
+h2.home-heading {
+    color: #3B403A;
+    background: linear-gradient(90deg, #F7C678, #FD815E);
+    font: 1.2em Lemon;
+    text-align: center;
+    padding: 5px;
+    margin: 0px auto 15px;
+}
+
+/* Home */
+/*Hero Image*/
+picture.heroImg img {
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+}
+
+
+/*Town Info*/
+.town-cards section {
+    font-family: IBM Plex Serif;
+    border: 2px solid #3B403A;
+    margin: 5px;
+    padding: .4em 0em 1em;
+    font-size: 1em;
+    /* background: linear-gradient(35deg, #8fa9ff, #9bff8e); */
+    background-color: rgb(255, 255, 161);
+    text-align: center;
+    width: 80%;
+    margin: 15px auto;
+}
+
+.town-cards section h2 {
+    font-family: Lemon;
+    font-size: 1.2em;
+    margin-bottom: 2px;
+}
+
+.town-cards section div {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.town-cards section p {
+    font-size: 1em;
+}
+
+div.town-cards section img {
+    width: 85%;
+}
+
+/*Article Section*/
+.article-sec h2 {
+    text-align: center;
+    font: 1.4em Lemon;
+    background-color: #FC6136;
+    padding: 0.5em;
+    color: #3B403A;
+    margin: auto auto 0;
+}
+
+.article-sec h3 {
+    font: 1.4em IBM Plex Serif;
+    font-weight: bold;
+    color: #3B403A;
+    background: linear-gradient(90deg, #F7C678, #FD815E);
+    text-align: center;
+    padding: 5px;
+    margin: 0px auto 15px;
+}
+
+.article-sec ul li {
+    font: 1em IBM Plex Serif;
+}
+
+/*Contact Info Section*/
+.contact-sec {
+    font: 1em IBM Plex Serif;
+    font-weight: bold;
+    padding: 1em;
+    border: none;
+    margin: 10px auto;
+    background-color: #FD815E;
+}
+
+.contact-sec img {
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+}
+
+.contact-sec p {
+    text-align: right;
+    font-size: 0.8em;
+}
+
+/*Footer Part*/
+.wf-link a {
+    font-size: 1em;
+    color: #FC6136;
+    text-decoration: none;
+    -webkit-text-stroke: 0.1px #3B403A;
+    margin-bottom: 0;
+    font-family: Lemon;
+}
+
+.wf-link a:hover {
+    color: rgb(255, 255, 161);
+}
+
+footer {
+    background: linear-gradient(0deg, #F7C678, #FD815E);
+    margin: auto;
+    text-align: center;
+    padding: 10px 5px;
+    font: 0.88em IBM Plex Serif;
+    font-weight: bold;
+}

@@ -1,0 +1,158 @@
+/*Body Part*/
+h2.storm-rep {
+    color: #3B403A;
+    background: linear-gradient(90deg, #F7C678, #FD815E);
+    font: 1.4em Lemon;
+    text-align: center;
+    padding: 5px;
+    margin: 0px auto 15px;
+}
+
+/* Storm Center */
+
+legend {
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+form {
+    display: block;
+    margin: 0 auto 15px;
+    font: 1.1em IBM Plex Serif;
+}
+
+fieldset {
+    border-radius: 10px;
+    padding: 0.5em;
+    background-color: #E9EDED;
+}
+
+form label {
+    display: block;
+    margin-left: 0;
+}
+
+
+input.textbox, select.textbox {
+    padding: 0.4em;
+    width: 100%;
+    max-width: 90%;
+}
+
+input.textbox:invalid {
+    background-color: #fdd;
+    border-bottom: 5px solid red;
+	color: #000;
+}
+
+input.textbox:valid {
+    background-color: #dfd;
+    border-bottom: 5px solid green;
+	color: #000;
+}
+
+
+label.radioOpt {
+    padding: 0.2em;
+
+}
+
+#severityRange, select.stormReg {
+    width: 100%;
+    max-width: 92%;
+}
+
+.submitBttn {
+    padding: 0.5em;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #F7C678, #FD815E);
+    display: block;
+    margin: 4% auto 0;
+}
+
+#addComment {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+@media only screen and (min-width: 50em) {
+    /*Body Part*/
+
+    h2.storm-rep {
+        font-size: 1.6em;
+        border-radius: 10px;
+        border: 1px solid #3B403A;
+    }
+
+    /* Storm Center */
+    form {
+        font-size: 1.2em;
+    }
+
+    legend {
+        font-size: 1.4em;
+        margin-left: 15%;
+        text-align: left;
+    }
+    
+    form label {
+        margin-left: 4%;
+    }
+
+    fieldset {
+        padding: 1.5em 1.5em 0.7em 1.5em;
+    }
+
+    input.textbox, select.textbox {
+        width: 60%;
+    }
+
+    .submitBttn {
+        margin-left: 18%;
+        margin-top: 2%;
+        margin-bottom: 0;
+    }
+
+    #severityRange, select.stormReg {
+        width: 61%;
+    }
+
+    #addComment {
+        width: 61%;
+        display: inline;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 80em) {
+    /*Body Part*/
+    h2.storm-rep {
+        font-size: 1.8em;
+    }
+
+    /* Storm Center */
+    
+    legend {
+        margin-left: 10%;
+    }
+
+    fieldset {
+        max-width: 55%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    input.textbox, select.textbox {
+        width: 80%;
+    }
+
+    #severityRange, select.stormReg {
+        width: 81%;
+    }
+
+    #addComment {
+        width: 81%;
+    }
+}

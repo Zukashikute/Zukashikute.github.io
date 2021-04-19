@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+   text-align: center;
+}
+
+h1 {
+    width: 100%;
+    background: linear-gradient(90deg, #F7C678, #FD815E);
+    margin: 0 auto;
+    padding: 0.5em;
+    font-family: Lemon;
+    color: #3B403A;
+}
+
+h2 {
+    font-family: IBM Plex Serif;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(0deg, #F7C678, #FD815E);
+    margin: 0 auto;
+    padding: 1em;
+    color: #3B403A;
+    font-weight: bold;
+    font-family: IBM Plex Serif;
+}

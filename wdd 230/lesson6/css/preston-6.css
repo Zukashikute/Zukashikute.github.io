@@ -1,0 +1,271 @@
+
+
+/*Header Part*/
+header {
+    background: linear-gradient(180deg, #F7C678, #FD815E);
+    display: flex;
+    padding: 5px 2px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header picture {
+    display: flex;
+    justify-content: center;
+}
+
+picture.site-icon {
+    margin: 5px;
+}
+
+
+.message { 
+    display: none;
+    padding-top: 0.8em;
+    background-color: #F7C678;
+    color:  #3B403A;
+    font: 1.1em IBM Plex Serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header-headings {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-right: 14px;
+}
+
+.header-headings h1 {
+    font: 1.6em Lemon;
+    color: #3B403A;
+    margin-bottom: 0px;
+}
+
+.header-headings div {
+    font: 1em IBM Plex Serif;
+    font-weight: bold;
+}
+
+
+
+/*Button Section*/
+
+button {
+    background-color: #FC6136;
+    color: #3B403A;
+    font-size: 30px;
+    width: 800px;
+    border-color: #3B403A;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: none;
+    border-right: none;
+}
+
+div.button-sec {
+    display: flex;
+    justify-content: center;
+}
+
+/*Navigation Section*/
+nav ul.hide {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    background-color: #FC6136;
+    text-align: center;
+    font-weight: bold;
+    font: 0.8em IBM Plex Serif;
+    padding-left: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    flex: 1 1 100%;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: IBM Plex Serif, serif;
+    color: #FECFC2;
+}
+
+li.active a h2 {
+    color: black;
+}
+
+a:hover {
+    color: #F3E52B;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Body Part*/
+main {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+h2.preston-heading {
+    color: #3B403A;
+    background: linear-gradient(90deg, #F7C678, #FD815E);
+    border: 1px solid #3B403A;
+    font: 1.2em Lemon;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px auto 15px;
+}
+
+/*Weather Summary and Pic*/
+.weather-sec img {
+    border-radius: 20px;
+}
+
+main h2 { 
+    font: 1em Lemon;
+    color: #3B403A;
+}
+
+section picture img {
+    display: block;
+    margin: 0 auto;
+}
+
+img.umbrella-pic {
+    width: 200px;
+    float: left;
+    margin-top: 10px;
+}
+
+.weather-sum {
+    background-color: #FECFC2;
+    padding: 1em;
+    border-radius: 20px;
+    text-align: right;
+    border: 1px solid #3B403A;
+    margin-bottom: 20px;
+}
+
+.weather-sum p {
+    font: 0.8em IBM Plex Serif;
+}
+
+.wc-deg {
+    display: none;
+}
+
+/* 5 Day Forecast Section*/
+.forecast-sec {
+    text-align: center;
+    font: 0.9em IBM Plex Serif;
+    font-weight: bold;
+}
+
+.forecast-table {
+    display: flex;
+	flex-direction: row;
+}
+
+.flex-col {
+	flex: 1 1 auto;
+    border: 1px solid #333;
+    border-collapse: collapse;
+	text-align: center;
+}
+
+.col-head {
+	display: block;
+	padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    background-color: #FC6136;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 0.8rem;
+    text-align: center;
+}
+
+/*Article Section*/
+section h3.normal-h3 {
+    font: 1em Lemon;
+    color: #3B403A;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.article-sec {
+    margin-top: 20px;
+    background-color: #F7C678;
+    padding: 1em;
+    border: 1px solid #3B403A;
+    border-radius: 20px;
+}
+
+.article-sec p {
+    font: 0.9em IBM Plex Serif;
+}
+
+.article-sec img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*Contact Info Section*/
+.contact-sec {
+    font: 1em IBM Plex Serif;
+    font-weight: bold;
+    padding: 1em;
+    border: 1px solid  #3B403A;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: #FD815E;
+}
+
+.contact-sec img {
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-sec p {
+    text-align: right;
+    font-size: 0.8em;
+}
+
+
+
+
+
+/*Footer Part*/
+footer {
+    background: linear-gradient(0deg, #F7C678, #FD815E);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 5px;
+    font: 0.88em IBM Plex Serif;
+    font-weight: bold;
+}
+
+
+

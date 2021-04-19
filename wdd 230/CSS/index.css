@@ -1,0 +1,87 @@
+
+html {
+    background-color: #D7D7D5;
+    font-size: 16px;
+}
+
+/* Header part */
+h1 {
+    text-align: center;
+    font: 2rem Lobster;
+    color: #34E5FF;
+    margin: 0;
+}
+
+img {
+    margin: auto;
+}
+
+.student-info {
+    background-color: #5B5B5D;
+    padding: 10px;
+
+}
+
+.student-pic {
+    max-width: 160px;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Body part */
+
+body {
+    max-width: 760px;
+    margin: 0 auto;
+}
+h2 {
+    font: 1.4rem Lora;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    text-align: center;
+    padding-bottom: 8px;
+    border-bottom: dotted;
+    border-color: black;
+    color: #474748;
+}
+
+ul li a {
+    color:  blue;
+}
+
+#main-body {
+    background-color: white;
+    max-width: 800px;
+}
+
+.assign-links {
+    margin-left: 20px;
+    margin-top: 5px;
+    font: 14px Lora;
+}
+
+/* Footer part */
+footer {
+    text-align: center;
+}
+
+#contact-info {
+    background-color: #5B5B5D;
+    text-align: center;
+    padding: 5px;
+} 
+
+.credits {
+    margin-top: 10px;
+    margin-bottom: 2.5px;
+    color:#34E5FF;
+    font: 12px Lora;
+}
+.credits a {
+    color: #34E5FF;
+}
+.time-update {
+    color: yellow;
+    font: 10px Lora;
+    margin: 4px;
+}

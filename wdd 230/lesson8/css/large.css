@@ -1,0 +1,43 @@
+@media only screen and (min-width: 55em) {
+    /*Header Part*/
+    .message {
+        font-size: 1.7em;
+    }
+
+    .header-headings h1 {
+        font-size: 2.2em;
+    }
+
+    .header-headings div {
+        font-size: 1.2em;
+    }
+
+    /*Nav Section*/
+    nav ul {
+        font-size: 1em;
+    }
+
+    /*Body Part*/
+
+
+    h2.storm-rep {
+        font-size: 1.4em;
+        width: 70%;
+    }
+
+    /* Storm Center */
+    
+    legend {
+        margin-left: 10%;
+    }
+
+    #addComment {
+        width: 70%;
+    }
+
+    /*Footer Part*/
+    footer {
+        max-width: 900px;
+        font-size: 1.1em;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" WDD 230 Assignment Preston Page by Jared Joshua Balajadia.">
+    <link href="../CSS/normalize.css" rel="stylesheet">
+    <link href="css/preston-10.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <title>Preston Town Page</title>
+</head>
+
+<body>
+    <div class="message">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <header>
+        <picture class="site-icon">
+            <source media="(max-width: 600px)" srcset="images/weather-small.png">
+            <source media="(max-width: 800px)" srcset="images/weather-medium.png">
+            <img src="images/weather-large.png" alt="weather-icon">
+        </picture>
+        <section class="header-headings">
+            <h1>My Weather, Your Weather</h1>
+            <div>"My weather, your weather is here to meet your weather needs."</div>
+        </section>
+    </header>
+
+    <nav class="clearfix">
+        <div class="button-sec">
+            <button onclick="toggleMenu()">&#9776;</button>
+        </div>
+        <ul id="primaryNav" class="hide navigation">
+            <li><a href="../lesson9/index.html">
+                    <h2>Home</h2>
+                </a></li>
+            <li class="active"><a href="#">
+                    <h2>Preston</h2>
+                </a></li>
+            <li><a href="#">
+                    <h2>Soda Springs</h2>
+                </a></li>
+            <li><a href="#">
+                    <h2>Fish Haven</h2>
+                </a></li>
+            <li><a href="../lesson8/stormcenter.html">
+                    <h2>Storm Center</h2>
+                </a></li>
+            <li><a href="../lesson7/gallery-7.html">
+                    <h2>Gallery</h2>
+                </a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2 class="preston-heading">Preston Idaho</h2>
+        <section class="weather-sec">
+            <div class="weather-sum">
+                <img class="umbrella-pic" src="images/umbrella.png" alt="weather1-icon">
+                <h2>Weather Summary</h2>
+                <p><strong>Currently:</strong> <span id="currTemp"></span>&#176;F and <span id="currCondition"></span></p>
+                <p><strong>High:</strong> <span class="temp" id="highTemp"></span>&#176;F </p>
+                <p><strong>Wind Chill:</strong> <span class="wind-chill" id="windChill"></span><span class="wc-deg">&#176;F</span></p>
+                <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+                <p><strong>Wind Speed:</strong> <span class="wind-speed" id="windSpeed"></span> MPH</p>
+            </div>
+            <picture class="hero-responsive">
+                <source media="(max-width: 600px)" srcset="images/hero-small.jpeg">
+                <source media="(max-width: 800px)" srcset="images/hero-medium.jpeg">
+                <img src="images/hero-large.jpeg" alt="preston-pic">
+            </picture>
+        </section>
+        <section class="forecast-sec">
+            <h2>5 Day Forecast</h2>
+            <div id="forecast-table">
+            </div>
+        </section>
+        <section class="article-sec">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/nature-small.jpg">
+                <source media="(max-width: 800px)" srcset="images/nature-medium.jpg">
+                <img src="images/nature-large.jpg" alt="nature-piclarge">
+            </picture>
+            <h2>More Snow Now Possible: Weather service revises winter forecast for Idaho</h2>
+            <h3 class="normal-h3">By Madeleine Coles</h3>
+            <p> Despite the cold temperatures and recent snowfall in East Idaho, the National Weather Service still says
+                the Gem State is expected to have a warmer than normal winter.
+
+                The weather service’s winter outlook was released last month and predicted some states, including Idaho,
+                would have warmer and drier winters.
+
+                The weather service has since revised that forecast and now says it’s no longer so sure about this
+                winter being drier than normal in Idaho. There’s a chance the state could receive more precipitation
+                than normal.</p>
+        </section>
+        <section class="contact-sec">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/map-small.png">
+                <source media="(max-width: 800px)" srcset="images/map-medium.png">
+                <img src="images/map-large.png" alt="maplarge-img">
+            </picture>
+            <p>My Weather, Your Weather <br>
+                30 N 1st E <br>
+                Preston, ID 83623
+                <br>
+                <br>
+                ☎ 963 989 5214 <br>
+                ✉ mwyw123@mail.org</p>
+        </section>
+    </main>
+    <footer>
+        <div id="contact-info">
+            &#169; My Weather, Your Weather | Attributions | Jared Joshua Balajadia
+            <div id="dayUpdate"></div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/preston-10.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['IBM Plex Serif', 'Lemon']
+            }
+        });
+    </script>
+</body>
+
+</html>

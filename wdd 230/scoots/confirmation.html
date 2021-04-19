@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Confirmation of Reservation Page for Scoots">
+    <title>Scoots</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        fieldset {
+            margin: 10px auto 20px;
+            border: 5px solid #69EBD0;
+        }
+
+        legend {
+            font: 30px Vesper Libre;
+        }
+
+        .tours img {
+            width: 60%;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .tour-wrap {
+            padding: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .tour2 {
+            background-color: #69EBD0;
+        }
+
+        .tours {
+            margin: 0 0 20px;
+        }
+
+        @media only screen and (min-width: 50em) {
+            .tours {
+                margin-bottom: 30px;
+            }
+        }
+
+
+
+        @media only screen and (min-width: 80em) {
+            .tours {
+                margin-bottom: 35px;
+            }
+
+            .tours img {
+                width: auto;
+            }
+
+            .tour-wrap {
+                align-items: center;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+            }
+
+            .tour2 picture {
+                grid-column: 2/3;
+            }
+
+            .tour2 p {
+                grid-row: 1/2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <picture class="site-logo">
+                <source media="(max-width: 50em)" srcset="images/scoots-small.jpg">
+                <source media="(max-width: 80em)" srcset="images/scoots-medium.jpg">
+                <img src="images/scoots-large.jpg" alt="scoots-logo">
+            </picture>
+        </a>
+        <div class="site-heading">
+            <h1>SCOOTS</h1>
+            <p>The ride you are looking for!</p>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+        <div class="button-sec">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+        </div>
+        <ul id="primaryNav" class="hide navigation">
+            <li><a href="index.html">
+                    Home
+                </a></li>
+            <li><a href="rentals.html">
+                    Rentals
+                </a></li>
+            <li class="active"><a href="reservation.html">
+                    Reservation
+                </a></li>
+            <li><a href="tours.html">
+                    Tours
+                </a></li>
+            <li><a href="contact.html">
+                    Contact Us
+                </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="mainpage-size">
+            <fieldset>
+                <legend>Confirmation</legend>
+                <p>Thank you for availing on our offer! We assure you that you will get the best service and experience
+                    here in Cozumel!</p>
+            </fieldset>
+        </div>
+        <div class="tour2 tour-wrap">
+            <picture class="pics">
+                <source media="(max-width: 80em)" srcset="images/phlandscape-medium.jpg"
+                    data-srcset="images/atlantis-small.jpg">
+                <img src="images/phlandscape-medium.jpg" data-src="images/atlantis-medium.jpg" alt="atlantis-pic">
+            </picture>
+            <p>Make the most of limited time and explore one of Cozumel’s most captivating coral reefs with
+                a guide.
+                Descend to depths of 100 feet (30 meters) and cruise along the ocean floor in the
+                air-conditioned
+                comfort of an Atlantis Submarine without getting wet. On this reef tour, you’ll learn about
+                the
+                marine ecosystem and see parts of the reef that were previously only accessible to scuba
+                divers.</p>
+        </div>
+        <div class="contact-section">
+            <h3>Contact Us</h3>
+            <div class=contact-info>
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-location-arrow"></i>1 Norte, Calle 14 Nte Esquina, Centro, 77710 Playa del
+                        Carmen, Mexico</li>
+                    <li><i class="fa-li fa fa-phone"></i>+52 984 873 4444</li>
+                    <li><i class="fa-li fa fa-envelope"></i>info@scoots.com</li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <a href="https://facebook.com/" target="_blank" rel="noopener"><i class="fa fa-facebook-square"
+                        aria-hidden="true"></i></a>
+                <a href="https://twitter.com/" target="_blank" rel="noopener"><i class="fa fa-twitter-square"
+                        aria-hidden="true"></i></a>
+                <a href="https://instagram.com/" target="_blank" rel="noopener"><i class="fa fa-skype"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &#169; 2020 Scoots - All Rights Reserved | <span id="dayUpdate"></span>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
+
+</html>
