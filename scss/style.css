@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto&display=swap");
+@-webkit-keyframes moveRight {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  16% {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  32% {
+    -webkit-transform: translateX(40%);
+            transform: translateX(40%);
+  }
+  48% {
+    -webkit-transform: translateX(60%);
+            transform: translateX(60%);
+  }
+  64% {
+    -webkit-transform: translateX(40%);
+            transform: translateX(40%);
+  }
+  80% {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  96% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+@keyframes moveRight {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  16% {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  32% {
+    -webkit-transform: translateX(40%);
+            transform: translateX(40%);
+  }
+  48% {
+    -webkit-transform: translateX(60%);
+            transform: translateX(60%);
+  }
+  64% {
+    -webkit-transform: translateX(40%);
+            transform: translateX(40%);
+  }
+  80% {
+    -webkit-transform: translateX(20%);
+            transform: translateX(20%);
+  }
+  96% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: .25;
+  }
+  50% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: .25;
+  }
+  50% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.background-info, .work-experience, .education-info, .achievements, .skills {
+  width: 100%;
+}
+
+.background-info {
+  text-align: center;
+  width: 100%;
+  background-color: #505353;
+  color: #f8f9fc;
+  padding: 1em 0;
+}
+
+.background-info > .bgInfo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.background-info > .bgInfo-wrapper div {
+  padding: 1em;
+}
+
+.work-experience {
+  width: 100%;
+  color: black;
+  background-color: #D1D3DB;
+  background-image: url(../images/workdesk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.work-experience hr {
+  background-color: black;
+  border: 1px solid black;
+}
+
+.work-experience div {
+  margin-left: 20px;
+  width: 90%;
+  padding: 0.5em 1em 1em;
+}
+
+.work-experience div:hover {
+  -webkit-animation: zoomIn 2s ease 1;
+          animation: zoomIn 2s ease 1;
+}
+
+.education-info {
+  width: 100%;
+  color: #f8f9fc;
+  background-color: #505353;
+  background-image: url(../images/educ.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+}
+
+.education-info hr {
+  background-color: #f8f9fc;
+  border: 1px solid #f8f9fc;
+}
+
+.education-info div {
+  margin-left: 20px;
+  width: 90%;
+  padding: 0.5em 1em 1em;
+}
+
+.education-info div:hover {
+  -webkit-animation: flash 1.5s linear 1;
+          animation: flash 1.5s linear 1;
+}
+
+.skills {
+  width: 100%;
+  background-color: #D1D3DB;
+  color: black;
+  background-image: url(../images/lightbulb.jpg);
+  background-repeat: no-repeat;
+  background-size: 430px 430px;
+  background-position: bottom right;
+}
+
+.skills a {
+  color: black;
+}
+
+.skills a:hover {
+  color: #0D84BF;
+}
+
+.skills hr {
+  background-color: black;
+  border: 1px solid black;
+}
+
+.skills div {
+  margin-left: 20px;
+  width: 90%;
+  padding: 0.5em 1em 1em;
+}
+
+.skills div ul li {
+  -webkit-transform-origin: 0%;
+          transform-origin: 0%;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+  margin-bottom: 10px;
+}
+
+.skills div ul li:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.achievements {
+  width: 100%;
+  background-color: #505353;
+  color: #f8f9fc;
+}
+
+.achievements a {
+  color: #f8f9fc;
+}
+
+.achievements a:hover {
+  color: #00F0B5;
+}
+
+.achievements hr {
+  background-color: #f8f9fc;
+  border: 1px solid #f8f9fc;
+}
+
+.achievements div {
+  margin-left: 20px;
+  width: 90%;
+  padding: 0.5em 1em 1em;
+}
+
+.projects {
+  width: 100%;
+  background-color: #D1D3DB;
+  color: black;
+}
+
+.projects hr {
+  background-color: black;
+  border: 1px solid black;
+}
+
+.projects div {
+  margin-left: 20px;
+  width: 90%;
+  padding: 0.5em 1em 1em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(20deg, #0D84BF, #72DDF7, #00F0B5);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bree Serif", serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+  -webkit-animation: moveRight 20s linear 2;
+          animation: moveRight 20s linear 2;
+  padding: 0.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+ul {
+  margin-top: 5px;
+}
+
+ul li {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-size: 16px;
+  margin-left: 30px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+@mixin primaryFont {
+   font-family: "Bree Serif", serif;
+}
+
+@mixin secondaryFont {
+   font-family: "Roboto", sans-serif;
+   font-size: 18px;
+}
+
+@mixin text-hCentered {
+   text-align: center;
+}
+
+@mixin items-centered {
+   justify-content: center;
+   align-items: center;
+}
+
+@mixin darkHR {
+   background-color: $textDarkColor;
+   border: 1px solid $textDarkColor;
+}
+
+@mixin lightHR {
+   background-color: $textLightColor;
+   border: 1px solid $textLightColor;
+}
+
+@mixin divSectionLayout {
+   margin-left: 20px;
+   width: 90%;
+   padding: 0.5em 1em 1em;
+}

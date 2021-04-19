@@ -1,0 +1,191 @@
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "keyframes";
+
+// Class Selectors
+.main-content {
+   width: 100%;
+   max-width: 1200px;
+   margin: auto;
+}
+
+.background-info, .work-experience, .education-info, .achievements, .skills {
+   width: 100%;
+}
+
+.background-info {
+   @include text-hCentered;
+   width: 100%;
+   background-color: $darkBackground;
+   color: $textLightColor;
+   padding: 1em 0;
+   
+   > .bgInfo-wrapper {
+      display: flex;
+      @include items-centered;
+
+      div {
+         padding: 1em;
+      }
+   }
+}
+
+.work-experience {
+   width: 100%;
+   color: $textDarkColor;
+   background-color: $lightBackground;
+   background-image: url(../images/workdesk.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   hr {
+      @include darkHR;
+   }
+   
+   div {
+      @include divSectionLayout;
+
+      &:hover {
+         animation: zoomIn 2s ease 1;
+      }
+   }
+   
+}
+
+.education-info {
+   width: 100%;
+   color: $textLightColor;
+   background-color: $darkBackground;
+   background-image: url(../images/educ.jfif);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: bottom right;
+
+   hr {
+      @include lightHR;
+   }
+
+   div {
+      @include divSectionLayout;
+
+      &:hover {
+         animation: flash 1.5s linear 1;
+      }
+   }
+}
+
+.skills {
+   width: 100%;
+   background-color: $lightBackground;
+   color: $textDarkColor;
+   background-image: url(../images/lightbulb.jpg);
+   background-repeat: no-repeat;
+   background-size: 430px 430px;
+   background-position: bottom right;
+
+   a {
+      color: $textDarkColor;
+
+      &:hover {
+         color: $lightBlue;
+      }
+   }
+
+   hr {
+      @include darkHR;
+   }
+
+   div {
+      @include divSectionLayout;
+
+      ul li {
+         transform-origin: 0%;
+         transition: transform 0.4s;
+         margin-bottom: 10px;
+
+         &:hover {
+            transform: scale(1.5);
+         }
+      }
+   }
+}
+
+
+.achievements {
+   width: 100%;
+   background-color: $darkBackground;
+   color: $textLightColor;
+
+   a {
+      color: $textLightColor;
+
+      &:hover {
+         color: $lightGreen;
+      }
+   }
+
+   hr {
+      @include lightHR;
+   }
+
+   div {
+      @include divSectionLayout;
+   }
+}
+
+.projects {
+   width: 100%;
+   background-color: $lightBackground;
+   color: $textDarkColor;
+
+   hr {
+      @include darkHR;
+   }
+
+   div {
+      @include divSectionLayout;
+   }
+}
+
+// Universal Selectors
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background: linear-gradient(20deg, $lightBlue, $lightCyan, $lightGreen);
+}
+
+h1, h2, h3, h4, h5, h6 {
+   @include primaryFont;
+}
+
+h1 {
+   font-size: 3em;
+}
+
+h2 {
+   font-size: 2em;
+   animation: moveRight 20s linear 2;
+   padding: 0.5em;
+}
+
+h3 {
+   font-size: 1.5em;
+}
+
+p {
+   @include secondaryFont;
+}
+
+ul {
+   margin-top: 5px;
+   li {
+      @include secondaryFont;
+      font-size: 16px;
+      margin-left: 30px;
+   }
+}
+
