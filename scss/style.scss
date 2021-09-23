@@ -120,6 +120,11 @@
    a {
       color: $textLightColor;
 
+      h3 {
+         font-size: 1.3em;
+         font-weight: 400;
+      }
+
       &:hover {
          color: $lightGreen;
       }
